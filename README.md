@@ -131,15 +131,15 @@ Memory-communication tradeoffs
 
 ### Production ML systems
 
-- 11/12 Tu: LLM training in Production (Shiyu Ma, Inaki Arango)
-  * Reading: [MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs](https://www.usenix.org/system/files/nsdi24-jiang-ziheng.pdf)
-  * Optional reading: [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783#page=64.50)
-- 11/14 Th: TPU (Emma Yang)
-  * Reading: [Resiliency at Scale: Managing Google’s TPUv4 Machine Learning Supercomputer](https://www.usenix.org/system/files/nsdi24-zu.pdf)
-  * Optional Reading: [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](https://arxiv.org/pdf/2304.01433.pdf)
-- 11/19 Tu: Data ingestion (Romeo Dean, Ayush Noori)
+- 11/12 Tu: Data ingestion (Romeo Dean)
   * Reading: [Understanding data storage and ingestion for large-scale deep recommendation model training](https://dl.acm.org/doi/pdf/10.1145/3470496.3533044?casa_token=hgqFSo4RkdIAAAAA:ADj2kpsgPUEjftbV54blNpO_98zhNTM675gjwsQ8uw7rDJcFeSRx99bIuEB-_H4Q1E4JPxfHPsJK)
   * Optional Reading: [RecD: Deduplication for End-to-End Deep Learning Recommendation Model Training Infrastructure](https://arxiv.org/abs/2211.05239) 
+- 11/14 Th: LLM training in Production (Shiyu Ma, Inaki Arango)
+  * Reading: [MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs](https://www.usenix.org/system/files/nsdi24-jiang-ziheng.pdf)
+  * Optional reading: [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783#page=64.50)
+- 11/19 Tu: TPU (Emma Yang, Ayush Noori)
+  * Reading: [Resiliency at Scale: Managing Google’s TPUv4 Machine Learning Supercomputer](https://www.usenix.org/system/files/nsdi24-zu.pdf)
+  * Optional Reading: [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](https://arxiv.org/pdf/2304.01433.pdf)
 - 11/21 Th: Sustainable AI: Environmental Implications, Challenges and Opportunities (invited talk from [Carole-Jean Wu](https://sites.google.com/site/carolejeanwu), Meta)
   * Reading: [Sustainable AI: Environmental Implications, Challenges and Opportunities](https://proceedings.mlsys.org/paper_files/paper/2022/file/462211f67c7d858f663355eff93b745e-Paper.pdf)
   * Optional Reading: [Beyond Efficiency: Scaling AI Sustainably](https://ieeexplore.ieee.org/document/10550120)
