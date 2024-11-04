@@ -124,7 +124,8 @@ Memory-communication tradeoffs
   * Optional reading: [Check-N-Run: a Checkpointing System for Training Deep Learning Recommendation Models](https://www.usenix.org/system/files/nsdi22-paper-eisenman.pdf)
 - 11/5 Tu: Fault tolerance (Dagim Gebrie)
   * Reading: [Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates](https://xinjin.github.io/files/SOSP23_Oobleck.pdf)
-  * Optional reading: [SlipStream: Adapting Pipelines for Distributed Training of Large DNNs Amid Failures](https://arxiv.org/abs/2405.14009)
+  * Optional reading: [SlipStream: Adapting Pipelines for Distributed Training of Large DNNs Amid Failures/ReCycle: Resilient Training of Large DNNs using Pipeline Adaptation
+](https://arxiv.org/abs/2405.14009)
 - 11/7 Th: Diagnosis (Tong Ding)
   * Reading: [Cloud Atlas: Efficient Fault Localization for Cloud Systems using Language Models and Causal Insight](https://arxiv.org/pdf/2407.08694)
   * Optional Reading: bytedance paper (will add later)
