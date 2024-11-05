@@ -128,7 +128,7 @@ Memory-communication tradeoffs
 ](https://arxiv.org/abs/2405.14009)
 - 11/7 Th: Diagnosis (Tong Ding)
   * Reading: [Cloud Atlas: Efficient Fault Localization for Cloud Systems using Language Models and Causal Insight](https://arxiv.org/pdf/2407.08694)
-  * Optional Reading: bytedance paper (will add later)
+  * Optional Reading: [Minder: Faulty Machine Detection for Large-scale Distributed Model Training](https://arxiv.org/abs/2411.01791)
 
 ### Production ML systems
 
