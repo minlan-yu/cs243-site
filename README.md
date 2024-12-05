@@ -219,7 +219,7 @@ This presentation should resemble a workshop talk. You might consider covering t
 
 
 ### Final Project Report
-The report should be similar in spirit to a workshop paper, spanning six pages of double-column, single-spaced, 10-point font, excluding references. Here is an example LaTeX framework for formatting and building your paper. As shown in the framework, you may consider the following sections for your report (adapted from Eddie's version):
+The report should be similar in spirit to a workshop paper, spanning six pages of double-column, single-spaced, 10-point font, excluding references. Here is an [example LaTeX framework](https://conferences.sigcomm.org/hotnets/2024/docs/hotnets24-template.zip) for formatting and building your paper. As shown in the framework, you may consider the following sections for your report (adapted from Eddie's version):
 
 - Title: Something grabby that correctly describes a part of the contribution.
 - Abstract: A paragraph or two that concisely describes the motivation for the work (the problem addressed), the contribution of the work, and a highlight of your results.
