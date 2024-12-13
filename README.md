@@ -183,7 +183,7 @@ The semester-long project is an open-ended systems research project. Project top
 - 11/4-8: Schedule individual meetings with Minlan to get feedback on your midterm report
 - 11/24 Tu, 12/3 Tu: Final project presentation
 - 12/11 Final project due at noon
-- 12/12 Review of other students' projects due at noon
+- 12/12 Review of other students' projects due at midnight
 
 ### Project Proposal
 The project proposal serves as a checkpoint, providing a basis for your meetings with Minlan and your pitch presentations. 
