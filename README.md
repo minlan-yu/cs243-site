@@ -20,9 +20,8 @@ The course focuses on the intersection of machine learning and networking. As ML
 
 ## Textbook
 There are no required textbooks for the course. You will read papers before each class to get the most out of the class. For backgrounds, you are encouraged to refer to the following books:
-For basic networking concepts, you can refer to the textbook (K&R) Computer Networking: A Top-Down Approach by Jim Kurose and Keith Ross. The latest edition is the 8th, but earlier editions are fine. 
+- For basic networking concepts, you can refer to the textbook (K&R) Computer Networking: A Top-Down Approach by Jim Kurose and Keith Ross. The latest edition is the 8th, but earlier editions are fine.
 - An alternative book is Computer Networks: A Systems Approach, by Larry Peterson and Bruce Davie. You can find an online version [here](https://book.systemsapproach.org/).
-- On the ML side, Prof Vijay Reddi is developing a book on [Machine Learning Systems](https://mlsysbook.ai/) 
 - Please feel free to contact me if some concepts are difficult to understand; I'll provide more supplemental materials.
 
 ## Coursework and Grading
