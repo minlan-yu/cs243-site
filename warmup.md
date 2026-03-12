@@ -24,10 +24,13 @@ This warm-up project gives you hands-on experience with [vLLM](https://github.co
 
 ## Part 2: Benchmarking
 
-1. Use vLLM's built-in benchmarking tool to measure throughput and latency:
+Keep the vLLM server from Part 1 running. In a separate terminal, use vLLM's built-in benchmarking tool to measure throughput and latency.
+
+1. Run a benchmark against the serving endpoint:
    ```bash
    vllm bench serve \
      --model meta-llama/Llama-3.1-8B-Instruct \
+     --dataset-name sharegpt \
      --request-rate 4 \
      --num-prompts 100
    ```
