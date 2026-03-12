@@ -14,73 +14,9 @@ The course focuses on the intersection of machine learning and networking. As ML
 - Prerequisite: This course has no prerequisites. Since this course will focus on reading papers on the latest topics in networking, you will need to be able to pick up the relevant background for each topic from textbooks or online materials.
 - Recommended prep: system programming at the level of CS 61, CS 143, or CS 145.
 
-## Infrastructure Notes
+## Getting Started
 
-**If you are thinking of attending the class, please check [the infrastructure page](infra.md) to set up your infrastructure as soon as possible**
-
-## Tryout Project: LLM Inference Serving with vLLM
-
-This warm-up project gives you hands-on experience with [vLLM](https://github.com/vllm-project/vllm), a high-throughput LLM serving engine that uses PagedAttention (one of the required readings in this course). You will deploy a model, benchmark its performance, and observe how GPU parallelism affects serving throughput.
-
-### Part 1: Setup and Single-GPU Serving
-
-1. Install vLLM:
-   ```bash
-   pip install vllm
-   ```
-
-2. Start a vLLM server with a small model (e.g., `meta-llama/Llama-3.1-8B-Instruct`):
-   ```bash
-   vllm serve meta-llama/Llama-3.1-8B-Instruct --port 8000
-   ```
-   Note: You will need a [Hugging Face access token](https://huggingface.co/settings/tokens) with access to the Llama model. Set it via `export HF_TOKEN=your_token`.
-
-3. In a separate terminal, send a test request:
-   ```bash
-   curl http://localhost:8000/v1/completions \
-     -H "Content-Type: application/json" \
-     -d '{"model": "meta-llama/Llama-3.1-8B-Instruct", "prompt": "Explain how PagedAttention works in 3 sentences.", "max_tokens": 128}'
-   ```
-
-### Part 2: Benchmarking
-
-1. Use vLLM's built-in benchmarking tool to measure throughput and latency:
-   ```bash
-   vllm bench serve \
-     --model meta-llama/Llama-3.1-8B-Instruct \
-     --request-rate 4 \
-     --num-prompts 100
-   ```
-
-2. Vary the request rate (e.g., 1, 2, 4, 8, 16 requests/sec) and record:
-   - Throughput (tokens/sec)
-   - Mean and P99 time-to-first-token (TTFT)
-   - Mean and P99 time-per-output-token (TPOT)
-
-3. Plot throughput vs. latency as you increase the request rate. At what point does the system saturate?
-
-### Part 3: Multi-GPU Tensor Parallelism
-
-For this part, launch a multi-GPU instance (e.g., `g5.12xlarge` with 4x A10G).
-
-1. Restart the server with tensor parallelism:
-   ```bash
-   vllm serve meta-llama/Llama-3.1-8B-Instruct --tensor-parallel-size 2 --port 8000
-   ```
-
-2. Re-run the same benchmarks from Part 2 and compare:
-   - How does throughput change with 2 GPUs vs 1?
-   - How does latency change?
-   - Is the speedup linear? Why or why not?
-
-### Questions to Think About
-
-- What does the throughput-latency curve look like as you increase the request rate? Where does the system saturate and why?
-- How does multi-GPU tensor parallelism affect throughput and latency compared to single-GPU? Is the speedup linear? Why or why not?
-- What role does PagedAttention play in enabling high-throughput serving? What would happen without it?
-- What are the communication overheads introduced by tensor parallelism, and how might they limit scaling?
-
-**Remember to stop or terminate your GPU instances when you are done — GPU instances are expensive!**
+**If you are thinking of attending the class, please check [the infrastructure page](infra.md) to set up your cloud infrastructure and try the [warmup project](warmup.md) as soon as possible**
 
 ## Textbook
 There are no required textbooks for the course. You will read papers before each class to get the most out of the class. For backgrounds, you are encouraged to refer to the following books:
@@ -202,7 +138,7 @@ The papers we read have an emphasis on distributed systems and networking in the
 ## Class Presentation
 - The goal of the presentation and in-class discussion is to learn how to form your own opinions about a paper.
 - Depending on the number of students, each student will give one to three talks during the course.
-- The speaker should send their slides to me three days before the presentation. In class, we expect you to know all the details of the paper and be able to answer questions during the discussion. If you have any questions about the paper, feel free to reach out to me before the class.
+- The speaker should send their slides to me three calendar days before the presentation. In class, we expect you to know all the details of the paper and be able to answer questions during the discussion. If you have any questions about the paper, feel free to reach out to me before the class.
 - Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own opinions of the work (not just the authors').
 
 ### Presentation format
@@ -213,7 +149,7 @@ The papers we read have an emphasis on distributed systems and networking in the
 - The presentation will be graded based on both content (your understanding of the paper) and presentation (your delivery of the knowledge).
 
 ## Projects
-The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading. Selected projects can be submitted as peer-reviewed workshop papers or posters.
+The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Selected projects can be submitted as peer-reviewed workshop papers or posters.
 
 ### Project Timeline
 - 9/13 Sun at noon: Form groups for course projects
@@ -232,20 +168,22 @@ Please check out the guidelines for pitch presentation below on what to write in
 **You will receive the full 1% grade if you submit your proposal on time.** Unfortunately, late submissions will not be accepted, and there is no opportunity to make up the grade. After submission, you can keep updating your proposal and bring your latest one to your meeting with Minlan.
 
 ### Project pitch presentation
-Each group should deliver a 5-minute talk on their project ideas. Be mindful about the scope of your project to ensure it can be completed by your team within two and a half months.
-The presentation should include the following points (one slide per question):
-- What problem are you solving? 
-- Why is it an important problem? 
+Each group should deliver a 5-minute talk followed by 2-3 minutes of Q&A. Be mindful about the scope of your project to ensure it can be completed by your team within two and a half months.
+The presentation should be 4-6 slides and include the following points:
+- What problem are you solving?
+- Why is it an important problem?
 - What potential challenges might you face in solving the problem?
 - What is your plan for the midterm report and division of work within the team?
 
-**Your grade depends on how concrete your problem and execution plan are** 
+Please submit your slides after the presentation.
+
+**Your grade depends on how concrete your problem and execution plan are.**
 
 ### Midterm Project Report
-The midterm report should be about 2-4 pages and serve as a starting point for your final project report (see detailed requirements for the final report below) **To achieve a high score for your midterm report, it is important to deliver an initial evaluation of your system.** You don't need to complete the entire system; instead, focus on identifying the most critical component/question in your project and provide an initial quantitative evaluation. The midterm report should include the following:
+The midterm report should be about 2-4 pages using the [ICML template](https://media.icml.cc/Conferences/ICML2025/Styles/icml2025.zip) and serve as a starting point for your final project report (see detailed requirements for the final report below). **To achieve a high score for your midterm report, it is important to deliver an initial evaluation of your system.** You don't need to complete the entire system; instead, focus on identifying the most critical component/question in your project and provide an initial quantitative evaluation. The midterm report should include the following:
 - Describe the problem you plan to solve, why it is novel/unique, and the major challenges (similar to your project pitch presentation, but feel free to adapt it based on your new understanding of the problem).
 - Describe the detailed design of your project and what you have implemented/evaluated so far.
-- Provide one evaluation figure about your initial system (This will be the focus of your meeting with Minlan)
+- Provide one quantitative evaluation figure (e.g., a performance graph) about your initial system (This will be the focus of your meeting with Minlan).
 - Discuss the remaining challenges, how you plan to address them, and your plan for the remaining time.
 
 ### Final project presentations
@@ -260,7 +198,7 @@ This presentation should resemble a workshop talk. You might consider covering t
 
 
 ### Final Project Report
-The report should be similar in spirit to a workshop paper, spanning six pages of single-column, single-spaced, 10-point font, excluding references. Here is an [example LaTeX framework](https://media.icml.cc/Conferences/ICML2025/Styles/icml2025.zip) for formatting and building your paper. As shown in the framework, you may consider the following sections for your report (adapted from Eddie's version):
+The report should be similar in spirit to a conference paper, spanning six pages of double-column, single-spaced, 10-point font, excluding references. Here is an [example LaTeX framework](https://media.icml.cc/Conferences/ICML2025/Styles/icml2025.zip) for formatting and building your paper. As shown in the framework, you may consider the following sections for your report (adapted from Eddie's version):
 
 - Title: Something grabby that correctly describes a part of the contribution.
 - Abstract: A paragraph or two that concisely describes the motivation for the work (the problem addressed), the contribution of the work, and a highlight of your results.
@@ -268,10 +206,11 @@ The report should be similar in spirit to a workshop paper, spanning six pages o
 - Design: Start with the high-level architecture of your system, and then describe the details of your design in enough relevant detail that a skilled system builder could replicate your work. Compare your design choices with alternative approaches to explain why you designed your system this way.
 - Evaluation: For systems work, this often includes the following subsections: (1) Experimental setup: Describe how you ran your experiments. What kinds of machines? How much memory? How many trials? How did you prepare the machine before each trial? (2) The experiments themselves, grouped by purpose. Include figures. (3) A summary of the experimental results. Some good evaluations are organized around performance hypotheses: statements that the experiments aim to support or disprove. It is important to discuss the implications of your observed results and why you see such results.
 - Related work: Describe related research, especially research closely related to your work. This section serves to provide citations and comparisons. For each group of citations, describe (1) the core idea, (2) what is complementary to your work, (3) what is more advanced than your work, and (4) what is advanced upon by your work. (2)–(4) are optional—some papers will be entirely complementary with or orthogonal to your work.
+- Limitations and Future Work: Briefly discuss what your system does not handle, known limitations, and directions for future improvement.
 - Conclusion: Summarize your work and its contributions.
 
 ### Code submission
-Together with the final report, you should submit the GitHub link of your project code. No need for superb software engineering, but ideally the code should be accompanied by enough documentation that a motivated user could attempt to replicate your results. You will need to demonstrate your product to the TFs at the final office hours. 
+Together with the final report, you should submit the GitHub link of your project code. No need for superb software engineering, but ideally the code should be accompanied by enough documentation that a motivated user could attempt to replicate your results. You will need to demonstrate your product to the TFs at office hours after the final project deadline. 
 
 ### Grading
 The first four milestones (initial proposal, pitch presentation, midterm report, final project presentations) are mainly graded based on how well you keep up with the project progress at each stage. You will also get feedback at these milestones on how to improve your projects. The final project will be graded based on: Motivation, Design, delivered system, and its evaluation. 
