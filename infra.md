@@ -7,11 +7,11 @@ A full tutorial on starting an AWS virtual machine can be found [here](https://d
 First you will have to sign up for an AWS regular account, if you don’t already have one. Do not apply for an AWS Educate Starter Account. 
 Please send your AWS IDs to the TFs based on our Ed announcements. You can then apply the AWS credits received from course TFs to your regular account (see this [link](https://aws.amazon.com/awscredits/) for info about redeeming credits). Below are a few tips of using the AWS account.
 - Set up a billing alert to make sure you don’t accidentally use up your free credits without noticing.
-- Stop your instances when are done for the day to avoid incurring charges. Use your funds wisely.
+- Stop your instances when you are done for the day to avoid incurring charges. Use your funds wisely.
 - Terminate them when you are sure you are done with your instance (disk storage also costs something, and can be significant if you have a large disk footprint).
 
 ## Quota Request
-Your AWS account has default quotas, but you can request a quota increase, such as access to more GPU instances, through one of following options. Increases are not granted immediately: it might take a couple of days for your increase to take effect. (From last year's experiences, AWS could delay weeks to approve new users.)
+Your AWS account has default quotas, but you can request a quota increase, such as access to more GPU instances, through one of following options. Increases are not granted immediately: it might take a couple of days for your increase to take effect. (From past experiences, AWS could delay weeks to approve new users.)
 
 - Open the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home). In the navigation pane, choose **AWS services** and select a service to view your current quotas. You will most likely be interested in the [EC2 quotas](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas).
 - You can [request a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) using the [request-service-quota-increase](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/request-service-quota-increase.html) AWS CLI command or, if a service is not yet available in the Service Quotas, [create a service limit increase case](https://support.console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase) using the AWS Support Center Console.
@@ -21,6 +21,14 @@ Here are some recommended quota increase requests from TFs if you don't know wha
 - All G and VT Spot Instance Requests: Default limit 0 ==> 20
 - All P Spot Instance Requests: Default limit 0 ==> 20
 
+## Spot vs On-Demand Instances
+The quota recommendations above reference **Spot Instances**, which are spare AWS capacity available at up to 60-90% discount compared to On-Demand pricing. However, AWS can reclaim Spot Instances with a 2-minute warning when it needs the capacity back.
+
+- **Use Spot Instances for:** fault-tolerant workloads, short experiments, hyperparameter sweeps, and any work where you can checkpoint and resume.
+- **Use On-Demand Instances for:** long-running training jobs or demos where interruption would be costly.
+- You can check current Spot pricing in the [Spot Instance pricing page](https://aws.amazon.com/ec2/spot/pricing/) and compare with [On-Demand pricing](https://aws.amazon.com/ec2/pricing/on-demand/).
+- Always save checkpoints frequently when using Spot Instances so you can resume if your instance is reclaimed.
+
 ## Security Groups
 The first thing that you'll want to do after logging into your AWS account is to create a security group. These security groups control which traffic is allowed between your AWS EC2 instances, so in order to do distributed training, we'll need to allow TCP connections between instances.
 1. Click into EC2 from the AWS homepage and go into **Security Groups** on the sidebar.
@@ -28,23 +36,87 @@ The first thing that you'll want to do after logging into your AWS account is to
 3. Now you'll need to add an inbound rule for the group to allow connections from instances within the same security group. Click **Add rule** and choose **All traffic** for the type. Click the search icon for source and scroll until you find the security group itself and then save the rule. 
 
 ## Instances
-Now we can generate the actual AWS EC2 instances. We'll be using 2 relatively small CPU instance for this warm-up project, but you'll likely use GPU instances for future projects.
 1. Go to **Instances** in the sidebar and click **Launch instances**.
-2. Enter a name you'd like and then scroll down and choose *c4.large* for the **Instance type**. This is compute instance with 2 vCPUs.
-3. Under **Key pair**, create a new keypair with RSA and `.pem` and save it (remember this location).
-4. Choose **select existing security group** and choose the security group that you made.
-5. Increase the storage to 20 GiB.
-6. Increase the number of instances to 2 and **Launch instance**.
+2. Enter a name you'd like (e.g., `vllm-tryout`).
+3. Under **Application and OS Images**, search for **Deep Learning OSS Nvidia Driver AMI** (Ubuntu-based). This AMI comes pre-installed with NVIDIA drivers, CUDA, and Python, saving significant setup time.
+4. Under **Instance type**, choose a GPU instance. For this tryout, `g5.xlarge` (1x A10G, 24GB VRAM) is sufficient for single-GPU work. If you want to try tensor parallelism, use `g5.12xlarge` (4x A10G).
+5. Under **Key pair**, create a new keypair with RSA and `.pem` and save it (remember this location).
+6. Choose **select existing security group** and choose the security group that you made.
+7. Increase the storage to 100 GiB (model weights require significant disk space).
+8. Click **Launch instance**.
 
 ## Connecting
-Now that the instances are online, you can connect to them using secure shell (SSH) protocol from your terminal. Since you created two instances, I would suggest opening two different terminals to do the steps simultaneously for both instances.
-1. In your instance page on AWS, click into the instance you want to connect to and copy the Public IPv4 DNS address. 
-2. In your terminal, go to the directory you saved the keypair at, and run the command `chmod 400 keypair.pem` if on Linux and Mac. If running a Ubuntu subsystem or a Windows machine, use the directions [here](https://narmadanannaka.com/how-to-run-the-chmod400-command-on-windows). This changes the permissions so that only the user can read the key. Note that you will not be able to SSH into your instance if you do not properly protect the key.
-3. Run the command `ssh -i keypair.pem ec2-user@[Public IPv4 DNS]` to connect to the instance.
-4. Run `sudo yum update -y` and `sudo yum install git -y` to install git.
+1. In your instance page on AWS, click into the instance you want to connect to and copy the Public IPv4 DNS address.
+2. In your terminal, go to the directory you saved the keypair at, and run `chmod 400 keypair.pem` (Mac/Linux). For Windows, see [these directions](https://narmadanannaka.com/how-to-run-the-chmod400-command-on-windows).
+3. Run `ssh -i keypair.pem ubuntu@[Public IPv4 DNS]` to connect to the instance.
+4. We recommend using `tmux` or `screen` for persistent sessions so your work survives SSH disconnects.
+
+## Tryout Project: LLM Inference Serving with vLLM
+
+This warm-up project gives you hands-on experience with [vLLM](https://github.com/vllm-project/vllm), a high-throughput LLM serving engine that uses PagedAttention (one of the required readings in this course). You will deploy a model, benchmark its performance, and observe how GPU parallelism affects serving throughput.
+
+### Part 1: Setup and Single-GPU Serving
+
+1. Install vLLM:
+   ```bash
+   pip install vllm
+   ```
+
+2. Start a vLLM server with a small model (e.g., `meta-llama/Llama-3.1-8B-Instruct`):
+   ```bash
+   vllm serve meta-llama/Llama-3.1-8B-Instruct --port 8000
+   ```
+   Note: You will need a [Hugging Face access token](https://huggingface.co/settings/tokens) with access to the Llama model. Set it via `export HF_TOKEN=your_token`.
+
+3. In a separate terminal, send a test request:
+   ```bash
+   curl http://localhost:8000/v1/completions \
+     -H "Content-Type: application/json" \
+     -d '{"model": "meta-llama/Llama-3.1-8B-Instruct", "prompt": "Explain how PagedAttention works in 3 sentences.", "max_tokens": 128}'
+   ```
+
+### Part 2: Benchmarking
+
+1. Use vLLM's built-in benchmarking tool to measure throughput and latency:
+   ```bash
+   vllm bench serve \
+     --model meta-llama/Llama-3.1-8B-Instruct \
+     --request-rate 4 \
+     --num-prompts 100
+   ```
+
+2. Vary the request rate (e.g., 1, 2, 4, 8, 16 requests/sec) and record:
+   - Throughput (tokens/sec)
+   - Mean and P99 time-to-first-token (TTFT)
+   - Mean and P99 time-per-output-token (TPOT)
+
+3. Plot throughput vs. latency as you increase the request rate. At what point does the system saturate?
+
+### Part 3: Multi-GPU Tensor Parallelism
+
+For this part, launch a multi-GPU instance (e.g., `g5.12xlarge` with 4x A10G).
+
+1. Restart the server with tensor parallelism:
+   ```bash
+   vllm serve meta-llama/Llama-3.1-8B-Instruct --tensor-parallel-size 2 --port 8000
+   ```
+
+2. Re-run the same benchmarks from Part 2 and compare:
+   - How does throughput change with 2 GPUs vs 1?
+   - How does latency change?
+   - Is the speedup linear? Why or why not?
+
+### Questions to Think About
+
+- What does the throughput-latency curve look like as you increase the request rate? Where does the system saturate and why?
+- How does multi-GPU tensor parallelism affect throughput and latency compared to single-GPU? Is the speedup linear? Why or why not?
+- What role does PagedAttention play in enabling high-throughput serving? What would happen without it?
+- What are the communication overheads introduced by tensor parallelism, and how might they limit scaling?
+
+**Remember to stop or terminate your GPU instances when you are done — GPU instances are expensive!**
 
 # Google Cloud
-A full tutorial of starting Google Cloud virtual machine can be found [here](https://cloud.google.com/compute/docs/instances/create-start-instance). Each student can get 50$ credits for Google Cloud. Please check Ed posting for details.
+A full tutorial of starting Google Cloud virtual machine can be found [here](https://cloud.google.com/compute/docs/instances/create-start-instance). Each student can get $50 credits for Google Cloud. Please check Ed posting for details.
 
 ## Instances
 1. In the Google Cloud console, go to the [**VM instances**](https://console.cloud.google.com/compute/instances) page. Select your instances and click **Continue**. Click **Create instance**.
@@ -77,5 +149,5 @@ On the page for your new VM, select the **public IP address** and copy it to you
 1. If you are on a Mac or Linux machine, open a Bash prompt and set read-only permission on the .pem file using chmod 400 `~/Downloads/yourKey.pem`. If you are on a Windows machine, open a PowerShell prompt.
 2. At your prompt, open an SSH connection to your virtual machine. Replace the IP address with the one from your VM, and replace the path to the `.pem` with the path to where the key file was downloaded.
 
-# Cloud Lab
-See more instructions here: https://www.cloudlab.us/
+# CloudLab
+[CloudLab](https://www.cloudlab.us/) is a public testbed that provides bare-metal access to servers with full control over the network stack. This is useful for projects that require low-level networking experiments (e.g., custom congestion control, RDMA, programmable switches) that are not possible on commercial cloud platforms. See the [CloudLab manual](https://docs.cloudlab.us/) for getting started.
