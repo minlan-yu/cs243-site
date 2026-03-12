@@ -59,5 +59,3 @@ For this part, launch a multi-GPU instance (e.g., `g5.12xlarge` with 4x A10G).
 - How does multi-GPU tensor parallelism affect throughput and latency compared to single-GPU? Is the speedup linear? Why or why not?
 - What role does PagedAttention play in enabling high-throughput serving? What would happen without it?
 - What are the communication overheads introduced by tensor parallelism, and how might they limit scaling?
-
-**Remember to stop or terminate your GPU instances when you are done — GPU instances are expensive!**
