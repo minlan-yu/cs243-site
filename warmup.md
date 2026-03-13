@@ -30,7 +30,7 @@ Keep the vLLM server from Part 1 running. In a separate terminal, use vLLM's bui
    ```bash
    vllm bench serve \
      --model meta-llama/Llama-3.1-8B-Instruct \
-     --dataset-name sharegpt \
+     --dataset-name random \
      --request-rate 4 \
      --num-prompts 100
    ```
