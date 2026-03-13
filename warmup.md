@@ -4,18 +4,31 @@ This warm-up project gives you hands-on experience with [vLLM](https://github.co
 
 ## Part 1: Setup and Single-GPU Serving
 
-1. Install vLLM:
+1. Create a Python virtual environment and install vLLM (the Deep Learning AMI requires a venv):
    ```bash
+   sudo apt-get install -y python3.12-venv
+   python3 -m venv ~/vllm-env
+   source ~/vllm-env/bin/activate
    pip install vllm
    ```
+   Note: Remember to run `source ~/vllm-env/bin/activate` whenever you open a new terminal.
 
-2. Start a vLLM server with a small model (e.g., `meta-llama/Llama-3.1-8B-Instruct`):
+2. Set up Hugging Face access for the Llama model:
+   - Create an account at [huggingface.co](https://huggingface.co) if you don't have one.
+   - Go to [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) and request access (usually auto-approved within minutes).
+   - Create a read token at [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens).
+   - Set the token in your environment:
+     ```bash
+     export HF_TOKEN=your_token
+     ```
+
+3. Start a vLLM server with the model:
    ```bash
    vllm serve meta-llama/Llama-3.1-8B-Instruct --port 8000
    ```
-   Note: You will need a [Hugging Face access token](https://huggingface.co/settings/tokens) with access to the Llama model. Set it via `export HF_TOKEN=your_token`.
+   The first launch will download model weights (~16 GB) and compile CUDA graphs, which takes a few minutes. Wait until you see `Application startup complete` in the logs.
 
-3. In a separate terminal, send a test request:
+4. In a separate terminal, send a test request:
    ```bash
    curl http://localhost:8000/v1/completions \
      -H "Content-Type: application/json" \

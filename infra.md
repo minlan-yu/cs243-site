@@ -17,9 +17,12 @@ Your AWS account has default quotas, but you can request a quota increase, such 
 - You can [request a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) using the [request-service-quota-increase](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/request-service-quota-increase.html) AWS CLI command or, if a service is not yet available in the Service Quotas, [create a service limit increase case](https://support.console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase) using the AWS Support Center Console.
 
 Here are some recommended quota increase requests from TFs if you don't know what you need for your project yet:
+- Running On-Demand G and VT instances: Default limit 0 ==> 4 (needed for the warmup project)
 - All Standard (A, C, D, H, I, M, R, T, Z) Spot Instance Requests: Default limit 5 ==> 100
 - All G and VT Spot Instance Requests: Default limit 0 ==> 20
 - All P Spot Instance Requests: Default limit 0 ==> 20
+
+**Important:** Request your quota increases as early as possible. Simple increases (e.g., 0 to 4 vCPUs) are often approved within a few hours, but new accounts may take longer.
 
 ## Spot vs On-Demand Instances
 The quota recommendations above reference **Spot Instances**, which are spare AWS capacity available at up to 60-90% discount compared to On-Demand pricing. However, AWS can reclaim Spot Instances with a 2-minute warning when it needs the capacity back.
