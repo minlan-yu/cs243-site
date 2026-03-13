@@ -216,7 +216,7 @@ The first four milestones (initial proposal, pitch presentation, midterm report,
 
 ### Policy on AI tools
 - **Paper reviews:** You are **not allowed** to use any AI tools (e.g., ChatGPT, Claude, Copilot) for writing paper reviews. Reviews must reflect your own reading and understanding of the papers. Violations of this policy will be considered academic misconduct.
-- **Course projects:** You are allowed to use AI tools for course projects (e.g., for coding, debugging, or brainstorming). Any such use must be appropriately acknowledged and cited in your project report. It is each student’s responsibility to assess the validity and applicability of any AI-generated output that is submitted; you bear the final responsibility.
+- **Course projects:** You are allowed to use AI tools for course projects (e.g., for coding, debugging, or brainstorming). Any such use must be appropriately acknowledged and cited in your project report. It is each student’s responsibility to assess the validity and applicability of any AI-generated output that is submitted; you bear the final responsibility. Violations of this policy will be considered academic misconduct.
 
 We draw your attention to the fact that different classes at Harvard could implement different AI policies, and it is the student’s responsibility to conform to expectations for each course. There are also [Harvard guidelines for GAI tools](https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard). 
 
