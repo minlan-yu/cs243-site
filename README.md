@@ -16,10 +16,10 @@ The course focuses on the intersection of machine learning and networking. As ML
 
 ## Getting Started
 
-**If you are thinking of attending the class, please check [the infrastructure page](infra.md) to set up your cloud infrastructure and try the [warmup project](warmup.md) as soon as possible**
+**If you are thinking of attending the class, please check [the infrastructure page](infra.md) to set up your cloud infrastructure and try the [warmup project](warmup.md) as soon as possible.**
 
 ## Textbook
-There are no required textbooks for the course. You will read papers before each class to get the most out of the class. For backgrounds, you are encouraged to refer to the following books:
+There are no required textbooks for the course. You will read papers before each class to get the most out of the class. For background, you are encouraged to refer to the following books:
 - For basic networking concepts, you can refer to the textbook (K&R) Computer Networking: A Top-Down Approach by Jim Kurose and Keith Ross. The latest edition is the 8th, but earlier editions are fine.
 - An alternative book is Computer Networks: A Systems Approach, by Larry Peterson and Bruce Davie. You can find an online version [here](https://book.systemsapproach.org/).
 - Please feel free to contact me if some concepts are difficult to understand; I'll provide more supplemental materials.
@@ -34,15 +34,15 @@ Please see the detailed requirements after the syllabus.
 
 ## Syllabus
 
-The papers we read have an emphasis on distributed systems and networking in the ML area. Review submission starts from 9/15 class.
+The papers we read emphasize distributed systems and networking in ML Systems. Review submission starts from 9/15 class.
 
 ### Introduction
 
 - 9/3 Th: Introduction (Minlan)
   * Optional reading: [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783)
   * Optional reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
-
-- 9/8 Tu: Background on model and hardware, high-level course project ideas (Minlan)
+- 9/8 Tu: Transformer, scaling law, Hardware, high-level course project ideas (Minlan)
+  * Reading: Transformer illustrated
     <!--
     https://jalammar.github.io/illustrated-transformer/
     https://jalammar.github.io/illustrated-gpt2/
@@ -50,93 +50,67 @@ The papers we read have an emphasis on distributed systems and networking in the
 
 ### Distributed Training (Parallelism schemes and Communication)
 
-- 9/10 Th: Data Parallelism and Sharding
-  * Reading: [PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel](https://arxiv.org/pdf/2304.11277.pdf)
-  * Optional reading: [Meta blog post](https://engineering.fb.com/2021/07/15/open-source/fsdp/)
+- 9/10 Th: Data Parallelism and Sharding (Minlan)
+  * Reading: Hugging Face
 - 9/15 Tu: Model Parallelism and Pipelining
-  * Reading: [PipeDream: Generalized Pipeline Parallelism for DNN Training](https://cs.stanford.edu/~matei/papers/2019/sosp_pipedream.pdf)
-  * Optional reading: [GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](https://proceedings.neurips.cc/paper/2019/file/093f65e080a295f8076b1c5722a46aa2-Paper.pdf)
-  * Optional reading: [Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](https://arxiv.org/pdf/2201.12023.pdf)
-- 9/17 Th: Parameter Server vs All Reduce
-  * Reading: [A Unified Architecture for Accelerating Distributed DNN Training in Heterogeneous GPU/CPU Clusters](https://www.usenix.org/system/files/osdi20-jiang.pdf)
-- 9/22 Tu: Collective Communication Optimizations
-  * Reading: [TACOS: Topology-Aware Collective Algorithm Synthesizer for Distributed Machine Learning](https://arxiv.org/abs/2304.05301)
-  * Optional Reading: [Rethinking Machine Learning Collective Communication as a Multi-Commodity Flow Problem](https://www.sivak.dev/assets/pdf/sigcomm24_teccl.pdf)
-  * Optional Reading: [GC3: An Optimizing Compiler for GPU Collective Communication](https://arxiv.org/pdf/2201.11840)
-
-
-### Large language models
-
-- 9/24 Th: LLM training
+  * Reading: Hugging Face book
+- 9/17 Th: Tensor Parallelism, Context Parallelism
   * Reading: [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](https://arxiv.org/pdf/2104.04473.pdf)
-  * Optional Reading: [ZeRO-Infinity: Breaking the GPU Memory Wall for Extreme Scale Deep Learning](https://arxiv.org/abs/2104.07857)
+- 9/22 Tu: Mixture of Experts
+  * Reading:
+  * Optional Reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
+
+
+### LLM Inferences
 - 9/29 Tu: LLM serving
   * Reading: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180)
-- 10/1 Th: Tutorials by TFs: Optional homework project walkthrough; [ASTRA-sim Distributed Machine Learning System simulator](https://astra-sim.github.io/)
+  * Optional Reading: Orca
+- 10/1 Th: Course project pitch presentation
 - 10/6 Tu: Course project pitch presentation
-- 10/8 Th: Throughput-latency tradeoffs
-  * Reading: [Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve](https://www.usenix.org/system/files/osdi24-agrawal.pdf)
-- 10/13 Tu: No class: Indigenous Peoples' Day
-- 10/15 Th: Distributed serving
+- 10/8 Th: Distributed serving
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
-
-### Network optimizations
-
-- 10/20 Tu: NCCL as a service
-  * Reading: [MCCS: A Service-based Approach to Collective Communication for Multi-Tenant Cloud](https://www.yongjiwu.me/assets/pdf/sigcomm24-mccs.pdf)
-- 10/22 Th: Flow scheduling
-  * Reading: [Crux: GPU-Efficient Communication Scheduling for Deep Learning Training](https://dl.acm.org/doi/pdf/10.1145/3651890.3672239)
-- 10/27 Tu: RDMA
-  * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
-- 10/29 Th: Congestion control
-  * Reading: [FASTFLOW: Flexible Adaptive Congestion Control for High-Performance Datacenters](https://arxiv.org/pdf/2404.01630) (please note that the version 1 of this paper is titled: SMaRTT-REPS: Sender-based Marked Rapidly-adapting Trimmed & Timed Transport with Recycled Entropies)
-  * Optional reading: [NVIDIA SpectrumX White Paper: Just check the adaptive routing part](https://resources.nvidia.com/en-us-data-center-overview/nvidia-spectrum-x-whitepaper)
-- 11/3 Tu: Ethics
-  * Reading: [Open (For Business): Big Tech, Concentrated Power, and the Political Economy of Open AI](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4543807)
-  * Optional Reading 1: [Not all AI models should be freely available, argues a legal scholar](https://www.economist.com/by-invitation/2024/07/29/not-all-ai-models-should-be-freely-available-argues-a-legal-scholar)
-  * Optional Reading 2: [Keep the code behind AI open, say two entrepreneurs](https://www.economist.com/by-invitation/2024/07/29/keep-the-code-behind-ai-open-say-two-entrepreneurs)
-
-### Reliability
-
-- 11/5 Th: Checkpointing
-  * Reading: [Gemini: Fast failure recovery in distributed training with in-memory checkpoints](https://assets.amazon.science/29/31/6523473f48e4af52252bac56ef51/gemini-fast-failure-recovery-in-distributed-training-with-in-memory-checkpoints.pdf)
-  * Optional reading: [Check-N-Run: a Checkpointing System for Training Deep Learning Recommendation Models](https://www.usenix.org/system/files/nsdi22-paper-eisenman.pdf)
-- 11/10 Tu: Fault tolerance
-  * Reading: [Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates](https://xinjin.github.io/files/SOSP23_Oobleck.pdf)
-  * Optional reading: [SlipStream: Adapting Pipelines for Distributed Training of Large DNNs Amid Failures/ReCycle: Resilient Training of Large DNNs using Pipeline Adaptation
-](https://arxiv.org/abs/2405.14009)
-- 11/12 Th: Diagnosis
-  * Reading: [Cloud Atlas: Efficient Fault Localization for Cloud Systems using Language Models and Causal Insight](https://arxiv.org/pdf/2407.08694)
-  * Optional Reading: [Minder: Faulty Machine Detection for Large-scale Distributed Model Training](https://arxiv.org/abs/2411.01791)
-
-### Production ML systems
-
-- 11/17 Tu: Data ingestion
-  * Reading: [Understanding data storage and ingestion for large-scale deep recommendation model training](https://dl.acm.org/doi/pdf/10.1145/3470496.3533044?casa_token=hgqFSo4RkdIAAAAA:ADj2kpsgPUEjftbV54blNpO_98zhNTM675gjwsQ8uw7rDJcFeSRx99bIuEB-_H4Q1E4JPxfHPsJK)
-  * Optional Reading: [RecD: Deduplication for End-to-End Deep Learning Recommendation Model Training Infrastructure](https://arxiv.org/abs/2211.05239)
-- 11/19 Th: LLM training in Production
-  * Reading: [MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs](https://www.usenix.org/system/files/nsdi24-jiang-ziheng.pdf)
-  * Optional reading: [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783#page=64.50)
-- 11/24 Tu: TPU
-  * Reading: [Resiliency at Scale: Managing Google’s TPUv4 Machine Learning Supercomputer](https://www.usenix.org/system/files/nsdi24-zu.pdf)
-  * Optional Reading: [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](https://arxiv.org/pdf/2304.01433.pdf)
-- 11/26 Th: No class: Thanksgiving
-
-### RL
-
-- TBD: Reinforcement Learning
-
-  * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
-
-### Long context
-
-- TBD: Long Context
-
+  * Reading: Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving
+- 10/13 Tu: No class: Indigenous Peoples' Day
+- 10/15 Th: Inference kernel optimization
+  * Reading: Flash attention
+  * Reading: Speculative decoding
+  * Optional Reading: background on GPUs: Stanford cs336 GPU section
+- Long context
+  * Reading: https://dl.acm.org/doi/10.1145/3694715.3695948; https://arxiv.org/abs/2504.02263; https://dl.acm.org/doi/epdf/10.1145/3695053.3731412
   * Optional reading: [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)
 
-## Wrapping up
-- 12/1 Tu: Final project presentation (batch I)
-- 12/3 Th: Final project presentation (batch II)
+### Networking and Communication
+
+- 10/20 Tu: Meta RDMA
+  * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
+- 10/22 Th: OpenAI MRC
+  * Reading: https://arxiv.org/pdf/2605.04333
+- 10/27 Tu: NCCLX
+  * Reading: NCCLX-sigcomm
+  * Optional reading: NCCLX-arxiv
+- 10/29 Th: Scale-up Networks
+  * Optional reading: scale-across networks: Minghao's arxiv paper
+- 11/3 Tu: 
+
+### Agentic AI 
+
+- 11/5 Th: 
+- 11/10 Tu: 
+- 11/12 Th: Post-training; Reinforcement learning
+  * Reading: Verl
+  * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
+  
+### Final project presentation
+
+- 11/17 Tu: Final project presentation (batch I)
+- 11/19 Th: Final project presentation (batch II)
+- 11/24 Tu: Final project presentation (batch III)
+- 11/26 Th: No class: Thanksgiving
+
+### Power
+- 12/1 Tu: Microsoft, Nvidia paper
+- 12/3 Th:  Another on Tappas
+  Optional reading ...
 - 12/16 Final Project Deadline (updated based on school examination group and dates)
 
 ## Reviews
