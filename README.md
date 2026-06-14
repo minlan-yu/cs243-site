@@ -41,8 +41,7 @@ The papers we read have an emphasis on distributed systems and networking in the
 - 9/3 Th: Introduction (Minlan)
   * Optional reading: [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783)
   * Optional reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
-  * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
-  * Optional reading: [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)
+
 - 9/8 Tu: Background on model and hardware, high-level course project ideas (Minlan)
     <!--
     https://jalammar.github.io/illustrated-transformer/
@@ -122,6 +121,18 @@ The papers we read have an emphasis on distributed systems and networking in the
   * Reading: [Resiliency at Scale: Managing Google’s TPUv4 Machine Learning Supercomputer](https://www.usenix.org/system/files/nsdi24-zu.pdf)
   * Optional Reading: [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](https://arxiv.org/pdf/2304.01433.pdf)
 - 11/26 Th: No class: Thanksgiving
+
+### RL
+
+- TBD: Reinforcement Learning
+
+  * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
+
+### Long context
+
+- TBD: Long Context
+
+  * Optional reading: [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)
 
 ## Wrapping up
 - 12/1 Tu: Final project presentation (batch I)
