@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a graduate-level course on computer networks, offering an in-depth exploration of selected advanced topics in networked systems. We will discuss the latest developments across the entire networking stack, the interactions between networks and high-level applications, and their connections with other system components such as computing and storage.
+This is a graduate-level course on computer networks that offers an in-depth exploration of selected advanced topics in networked systems. We will discuss the latest developments across the entire networking stack, the interactions between networks and high-level applications, and their connections with other system components such as computing and storage.
 
 The course focuses on the intersection of machine learning and networking. As ML applications increasingly rely on larger models, longer contexts, and faster accelerators — from large-scale distributed training to efficient inference serving — the demand for enhanced networking capabilities becomes imperative. We will study cutting-edge networking solutions and principles for co-designing networks with computing and storage, covering topics such as parallelism strategies, collective communication, RDMA, congestion control, fault tolerance, and production ML infrastructure. The course will include lectures, in-class presentations, paper discussions, and a research project.
 
@@ -10,7 +10,7 @@ The course focuses on the intersection of machine learning and networking. As ML
 - Lecture time: TuTh 11:15 am to 12:30 pm
 - Location: SEC 1.402
 - Office hours: Tu 10-11 am, SEC 4.415
-- Teaching fellows: TBD
+- Teaching fellows: Weifan Jiang weifanjiang@g.harvard.edu
 - Prerequisite: This course has no prerequisites. Since this course will focus on reading papers on the latest topics in networking, you will need to be able to pick up the relevant background for each topic from textbooks or online materials.
 - Recommended prep: system programming at the level of CS 61, CS 143, or CS 145.
 
