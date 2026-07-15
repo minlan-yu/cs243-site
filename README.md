@@ -46,6 +46,8 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 ### Distributed Training (Parallelism schemes and Communication)
 
 - 9/10 Th: Data Parallelism and Sharding (Minlan)
+  * Reading: [PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel](https://arxiv.org/abs/2304.11277)
+  * Reading: [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054)
   * Optional Reading: [Hugging Face Playbook - Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism)
 - 9/15 Tu: Model Parallelism and Pipelining
   * Optional Reading: [Hugging Face Playbook - Pipeline Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#pipeline_parallelism)
