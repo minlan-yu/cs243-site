@@ -64,7 +64,9 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 10/6 Tu: Course project pitch presentation
 - 10/8 Th: Distributed serving
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
-  * Reading: Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving
+- KV Cache
+  * Reading: [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079)
+  * Optional Reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
 - 10/13 Tu: No class: Indigenous Peoples' Day
 - 10/15 Th: Inference kernel optimization
   * Reading: Flash attention
