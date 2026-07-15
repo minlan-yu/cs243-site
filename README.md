@@ -40,13 +40,8 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 - 9/3 Th: Introduction (Minlan)
   * Optional reading: [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783)
-  * Optional reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
 - 9/8 Tu: Transformer, scaling law, Hardware, high-level course project ideas (Minlan)
-  * Reading: Transformer illustrated
-    <!--
-    https://jalammar.github.io/illustrated-transformer/
-    https://jalammar.github.io/illustrated-gpt2/
-    -->
+  * Optional Reading: [Transformer illustrated](https://jalammar.github.io/illustrated-transformer/)
 
 ### Distributed Training (Parallelism schemes and Communication)
 
