@@ -51,7 +51,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 ### Distributed Training (Parallelism schemes and Communication)
 
 - 9/10 Th: Data Parallelism and Sharding (Minlan)
-  * Reading: [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — sections [Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism) and [Zero Redundancy Optimizer (ZeRO)](https://nanotron-ultrascale-playbook.static.hf.space/#zero_redundancy_optimizer_%28zero%29)
+  * Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — sections [Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism) and [Zero Redundancy Optimizer (ZeRO)](https://nanotron-ultrascale-playbook.static.hf.space/#zero_redundancy_optimizer_%28zero%29)
 - 9/15 Tu: Model Parallelism and Pipelining
   * Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — section [Pipeline Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#pipeline_parallelism)
 - 9/17 Th: Tensor Parallelism, Context Parallelism
