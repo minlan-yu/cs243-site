@@ -51,17 +51,16 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 ### Distributed Training (Parallelism schemes and Communication)
 
 - 9/10 Th: Data Parallelism and Sharding (Minlan)
-  * Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — sections [Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism) and [Zero Redundancy Optimizer (ZeRO)](https://nanotron-ultrascale-playbook.static.hf.space/#zero_redundancy_optimizer_%28zero%29)
+  * Optional Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — sections [Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism)
 - 9/15 Tu: Model Parallelism and Pipelining
-  * Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — section [Pipeline Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#pipeline_parallelism)
+  * Optional Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — section [Pipeline Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#pipeline_parallelism)
 - 9/17 Th: Tensor Parallelism, Context Parallelism
   * Reading: [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](https://arxiv.org/pdf/2104.04473.pdf)
-  * Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — sections [Tensor Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#tensor_parallelism), [Sequence Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#sequence_parallelism), and [Context Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#context_parallelism)
+  * Optional Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — sections [Tensor Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#tensor_parallelism), [Sequence Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#sequence_parallelism), and [Context Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#context_parallelism)
 - 9/22 Tu: Mixture of Experts
-  * Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — section [Expert Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#expert_parallelism)
-  * Optional Reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
-
-
+  * Reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
+  * Optional Reading: [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) (Hugging Face) — section [Expert Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#expert_parallelism)
+  
 ### LLM Inferences
 - 9/29 Tu: LLM serving
   * Reading: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180)
