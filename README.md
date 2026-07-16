@@ -57,6 +57,8 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: [Hugging Face Playbook - Tensor Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#tensor_parallelism), [Sequence Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#sequence_parallelism), and [Context Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#context_parallelism)
 - 9/22 Tu: Mixture of Experts
   * Reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
+  * Reading: [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://dl.acm.org/doi/epdf/10.1145/3695053.3731412)
+  * Optional Reading: [MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism](https://arxiv.org/abs/2504.02263)
   * Optional Reading: [Hugging Face Playbook - Expert Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#expert_parallelism)
   
 ### LLM Inferences
@@ -77,8 +79,6 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
 - 10/22 Th: Long context
   * Reading: [LoongServe: Efficiently Serving Long-Context Large Language Models with Elastic Sequence Parallelism](https://dl.acm.org/doi/10.1145/3694715.3695948)
-  * Reading: [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://dl.acm.org/doi/epdf/10.1145/3695053.3731412)
-  * Optional Reading: [MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism](https://arxiv.org/abs/2504.02263)
   * Optional reading: [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)
 
 ### Networking and Communication
