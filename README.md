@@ -89,7 +89,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
 - 10/29 Th: OpenAI MRC
   * Reading: https://arxiv.org/pdf/2605.04333
-  * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf) (OSDI 2025)
+  * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf) 
 - 11/3 Tu: NCCLX
   * Reading: NCCLX-sigcomm
   * Optional reading: NCCLX-arxiv
