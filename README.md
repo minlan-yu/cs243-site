@@ -85,6 +85,8 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 - 10/27 Tu: Meta RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
+  * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
+  * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
 - 10/29 Th: OpenAI MRC
   * Reading: https://arxiv.org/pdf/2605.04333
 - 11/3 Tu: NCCLX
