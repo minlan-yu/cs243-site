@@ -79,6 +79,9 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Reading: [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
   * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
 - 10/22 Th: Fused kernel
+  * Reading: [MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs](https://arxiv.org/abs/2512.22219)
+  * Reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
+  * Optional Reading: [ThunderKittens: Simple, Fast, and Adorable AI Kernels](https://arxiv.org/abs/2410.20399)
   * Optional Reading: [Hugging Face Playbook - Fused kernels](https://nanotron-ultrascale-playbook.static.hf.space/#fused_kernels)
 
 ### Networking and Communication
