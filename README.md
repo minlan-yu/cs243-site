@@ -64,7 +64,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 ### LLM Inferences
 - 9/29 Tu: LLM serving
   * Reading: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180)
-  * Optional Reading: Orca
+  * Optional Reading: [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/system/files/osdi22-yu.pdf) (OSDI 2022)
 - 10/1 Th: Course project pitch presentation
 - 10/6 Tu: Course project pitch presentation
 - 10/8 Th: Distributed serving
