@@ -88,31 +88,29 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 - 10/27 Tu: RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
-  * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf) (OSDI 2026)
+  * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf) 
 - 10/29 Th: OpenAI MRC
   * Reading: https://arxiv.org/pdf/2605.04333
   * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
   * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
 - 11/3 Tu: NCCLX
   * Reading: [Collective Communication for 100k+ GPUs](https://arxiv.org/abs/2510.20171)
-  * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf) (OSDI 2025)
-  * Optional reading: NCCLX-arxiv
-- 11/5 Th: Scale-up Networks
-  * Optional reading: scale-across networks: Minghao's arxiv paper
+  * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
 
-### Agentic AI 
 
-- 11/10 Tu: 
+
+### RL, Agentic AI, and Power
+
+- 11/5 Th: 
+- 11/10 Tu:
 - 11/12 Th: Post-training; Reinforcement learning
   * Reading: Verl
+  * Reading: skyRL
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
-  
-### Power
-- 11/17 Tu: Microsoft, Nvidia paper
+- 11/17 Tu: 
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
   * Optional Reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
-- 11/19 Th:  Another on Tappas
-  Optional reading ...
+
 
 ### Final project presentation
 
