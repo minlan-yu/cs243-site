@@ -50,6 +50,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Reading: [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054)
   * Optional Reading: [Hugging Face Playbook - Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism)
 - 9/15 Tu: Model Parallelism and Pipelining
+  * Reading: [PipeDream: Generalized Pipeline Parallelism for DNN Training](https://dl.acm.org/doi/10.1145/3341301.3359646)
   * Optional Reading: [Hugging Face Playbook - Pipeline Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#pipeline_parallelism)
 - 9/17 Th: Tensor Parallelism, Context Parallelism
   * Reading: [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](https://arxiv.org/pdf/2104.04473.pdf)
@@ -71,11 +72,13 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
 - 10/13 Tu: No class: Indigenous Peoples' Day
 - 10/15 Th: Inference kernel optimization
-  * Reading: Flash attention
-  * Reading: Speculative decoding
-  * Optional Reading: background on GPUs: Stanford cs336 GPU section
+  * Reading: [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)
+  * Reading: [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
+  * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
 - Long context
-  * Reading: https://dl.acm.org/doi/10.1145/3694715.3695948; https://arxiv.org/abs/2504.02263; https://dl.acm.org/doi/epdf/10.1145/3695053.3731412
+  * Reading: [LoongServe: Efficiently Serving Long-Context Large Language Models with Elastic Sequence Parallelism](https://dl.acm.org/doi/10.1145/3694715.3695948)
+  * Reading: [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://dl.acm.org/doi/epdf/10.1145/3695053.3731412)
+  * Optional Reading: [MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism](https://arxiv.org/abs/2504.02263)
   * Optional reading: [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)
 
 ### Networking and Communication
@@ -99,17 +102,17 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Reading: Verl
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
   
+### Power
+- 11/17 Tu: Microsoft, Nvidia paper
+- 11/19 Th:  Another on Tappas
+  Optional reading ...
+
 ### Final project presentation
 
-- 11/17 Tu: Final project presentation (batch I)
-- 11/19 Th: Final project presentation (batch II)
-- 11/24 Tu: Final project presentation (batch III)
+- 11/24 Tu: Final project presentation (batch I)
 - 11/26 Th: No class: Thanksgiving
-
-### Power
-- 12/1 Tu: Microsoft, Nvidia paper
-- 12/3 Th:  Another on Tappas
-  Optional reading ...
+- 12/1 Tu: Final project presentation (batch II)
+- 12/3 Th: Final project presentation (batch III)
 - 12/16 Final Project Deadline (updated based on school examination group and dates)
 
 ## Reviews
@@ -142,7 +145,7 @@ The semester-long project is an open-ended systems research project. Project top
 - 10/6 Tu: Course project pitch presentation
 - 11/8 Sun at noon: Midterm project report due at noon
 - 11/9-13: Schedule individual meetings with Minlan to get feedback on your midterm report
-- 12/1 Tu, 12/3 Th: Final project presentation
+- 11/24 Tu, 12/1 Tu, 12/3 Th: Final project presentation
 - 12/16 Final project due at noon
 - 12/17 Review of other students' projects due at midnight
 
