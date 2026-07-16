@@ -67,15 +67,15 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 10/6 Tu: Course project pitch presentation
 - 10/8 Th: Distributed serving
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
-- KV Cache
+- 10/13 Tu: No class: Indigenous Peoples' Day
+- 10/15 Th: KV Cache
   * Reading: [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079)
   * Optional Reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
-- 10/13 Tu: No class: Indigenous Peoples' Day
-- 10/15 Th: Inference kernel optimization
+- 10/20 Tu: Inference kernel optimization
   * Reading: [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)
   * Reading: [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
   * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
-- Long context
+- 10/22 Th: Long context
   * Reading: [LoongServe: Efficiently Serving Long-Context Large Language Models with Elastic Sequence Parallelism](https://dl.acm.org/doi/10.1145/3694715.3695948)
   * Reading: [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://dl.acm.org/doi/epdf/10.1145/3695053.3731412)
   * Optional Reading: [MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism](https://arxiv.org/abs/2504.02263)
@@ -83,20 +83,18 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 ### Networking and Communication
 
-- 10/20 Tu: Meta RDMA
+- 10/27 Tu: Meta RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
-- 10/22 Th: OpenAI MRC
+- 10/29 Th: OpenAI MRC
   * Reading: https://arxiv.org/pdf/2605.04333
-- 10/27 Tu: NCCLX
+- 11/3 Tu: NCCLX
   * Reading: NCCLX-sigcomm
   * Optional reading: NCCLX-arxiv
-- 10/29 Th: Scale-up Networks
+- 11/5 Th: Scale-up Networks
   * Optional reading: scale-across networks: Minghao's arxiv paper
-- 11/3 Tu: 
 
 ### Agentic AI 
 
-- 11/5 Th: 
 - 11/10 Tu: 
 - 11/12 Th: Post-training; Reinforcement learning
   * Reading: Verl
