@@ -118,7 +118,9 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 11/17 Tu: Prompt and program optimization
   * Reading: [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457)
   * Optional Reading: [optimize_anything: A Universal API for Optimizing any Text Parameter](https://arxiv.org/abs/2605.19633)
-- 11/19 Th: 
+- 11/19 Th: Computer use
+  * Reading: [OSGym: Scalable OS Infra for Computer Use Agents](https://arxiv.org/abs/2511.11672)
+  * Optional Reading: [OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents](https://arxiv.org/abs/2506.16042)
 
 
 ### Final project presentation
