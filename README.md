@@ -105,22 +105,22 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 11/3 Tu: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
   * Optional Reading: [Pie: A Programmable Serving System for Emerging LLM Applications](https://arxiv.org/abs/2510.24051)
-- 11/5 Th: Post-training; Reinforcement learning
+- 11/5 Th: Prompt and program optimization
+  * Reading: [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457)
+  * Optional Reading: [optimize_anything: A Universal API for Optimizing any Text Parameter](https://arxiv.org/abs/2605.19633)
+- 11/10 Tu: Computer use
+  * Reading: [OSGym: Scalable OS Infra for Computer Use Agents](https://arxiv.org/abs/2511.11672)
+  * Optional Reading: [OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents](https://arxiv.org/abs/2506.16042)
+- 11/12 Th: Post-training; Reinforcement learning
   * Reading: [Verl (HybridFlow: A Flexible and Efficient RLHF Framework)](https://arxiv.org/abs/2409.19256)
   * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
-- 11/10 Tu: Reinforcement learning systems
+- 11/17 Tu: Reinforcement learning systems
   * Reading: [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](https://arxiv.org/abs/2604.09107)
   * Reading: [Accelerating RLHF with vLLM, Best Practice from OpenRLHF](https://blog.vllm.ai/2025/04/23/openrlhf-vllm.html)
-- 11/12 Th: Power
+- 11/19 Th: Power
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
   * Optional Reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
-- 11/17 Tu: Prompt and program optimization
-  * Reading: [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457)
-  * Optional Reading: [optimize_anything: A Universal API for Optimizing any Text Parameter](https://arxiv.org/abs/2605.19633)
-- 11/19 Th: Computer use
-  * Reading: [OSGym: Scalable OS Infra for Computer Use Agents](https://arxiv.org/abs/2511.11672)
-  * Optional Reading: [OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents](https://arxiv.org/abs/2506.16042)
 
 
 ### Final project presentation
