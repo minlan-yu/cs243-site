@@ -68,7 +68,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/system/files/osdi22-yu.pdf) (OSDI 2022)
 - 10/1 Th: Course project pitch presentation
 - 10/6 Tu: Course project pitch presentation
-- 10/8 Th: Distributed serving
+- 10/8 Th: Distributed serving (Guest lecture)
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
 - 10/13 Tu: No class: Indigenous Peoples' Day
 - 10/15 Th: KV Cache
