@@ -79,7 +79,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
 - 10/15 Th: Diffusion inference
   * Reading: [DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models](https://arxiv.org/abs/2402.19481)
-  * Reading: [Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models](https://www.usenix.org/system/files/nsdi24-agarwal-shubham.pdf) 
+  * Optional Reading: [Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models](https://www.usenix.org/system/files/nsdi24-agarwal-shubham.pdf) 
   * Optional Reading: [PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference](https://arxiv.org/abs/2405.14430)
 
 ### Networking and Communication
