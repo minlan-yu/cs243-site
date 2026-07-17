@@ -77,20 +77,24 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Reading: [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)
   * Reading: [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
   * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
+- 10/15 Th: Diffusion inference
+  * Reading: [DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models](https://arxiv.org/abs/2402.19481)
+  * Reading: [Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models](https://www.usenix.org/system/files/nsdi24-agarwal-shubham.pdf) (NSDI 2024)
+  * Optional Reading: [PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference](https://arxiv.org/abs/2405.14430)
 
 ### Networking and Communication
 
-- 10/15 Th: RDMA
+- 10/20 Tu: RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
   * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf)
-- 10/20 Tu: AI networking
+- 10/22 Th: AI networking
   * Reading: [OpenAI MRC](https://arxiv.org/pdf/2605.04333)
   * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
   * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
-- 10/22 Th: NCCLX
+- 10/27 Tu: NCCLX
   * Reading: [Collective Communication for 100k+ GPUs](https://arxiv.org/abs/2510.20171)
   * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
-- 10/27 Tu: Fused kernel
+- 10/29 Th: Fused kernel
   * Reading: [MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs](https://arxiv.org/abs/2512.22219)
   * Reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
   * Optional Reading: [ThunderKittens: Simple, Fast, and Adorable AI Kernels](https://arxiv.org/abs/2410.20399)
@@ -100,23 +104,22 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 ### RL, Agentic AI, and Power
 
-- 10/29 Th: Agentic AI
+- 11/3 Tu: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
   * Optional Reading: [Pie: A Programmable Serving System for Emerging LLM Applications](https://arxiv.org/abs/2510.24051)
-- 11/3 Tu: Post-training; Reinforcement learning
+- 11/5 Th: Post-training; Reinforcement learning
   * Reading: [Verl (HybridFlow: A Flexible and Efficient RLHF Framework)](https://arxiv.org/abs/2409.19256)
   * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
-- 11/5 Th: Reinforcement learning systems
+- 11/10 Tu: Reinforcement learning systems
   * Reading: [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](https://arxiv.org/abs/2604.09107)
   * Reading: [Accelerating RLHF with vLLM, Best Practice from OpenRLHF](https://blog.vllm.ai/2025/04/23/openrlhf-vllm.html)
-- 11/10 Tu: Power
+- 11/12 Th: Power
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
   * Optional Reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
-- 11/12 Th: Prompt and program optimization
+- 11/17 Tu: Prompt and program optimization
   * Reading: [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457)
   * Optional Reading: [optimize_anything: A Universal API for Optimizing any Text Parameter](https://arxiv.org/abs/2605.19633)
-- 11/17 Tu: 
 - 11/19 Th: 
 
 
