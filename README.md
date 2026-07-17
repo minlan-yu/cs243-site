@@ -96,10 +96,8 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
 - 10/29 Th: Fused kernel
   * Reading: [MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs](https://arxiv.org/abs/2512.22219)
-  * Reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
+  * Optional Reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
   * Optional Reading: [ThunderKittens: Simple, Fast, and Adorable AI Kernels](https://arxiv.org/abs/2410.20399)
-  * Optional Reading: [Hugging Face Playbook - Fused kernels](https://nanotron-ultrascale-playbook.static.hf.space/#fused_kernels)
-
 
 
 ### RL, Agentic AI, and Power
