@@ -147,7 +147,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - The presentation will be graded based on both content (your understanding of the paper) and presentation (your delivery of the knowledge).
 
 ## Projects
-The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Selected projects can be submitted as peer-reviewed workshop papers or posters.
+The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Selected projects will be submitted to [ICLR 2027](https://iclr.cc/) workshops and the [ICML](https://icml.cc/) main track as peer-reviewed papers.
 
 ### Project Timeline
 - 9/13 Sun at noon: Form groups for course projects
