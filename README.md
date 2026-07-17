@@ -84,8 +84,8 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 10/22 Th: RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
   * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf)
-- 10/27 Tu: OpenAI MRC
-  * Reading: https://arxiv.org/pdf/2605.04333
+- 10/27 Tu: AI networking
+  * Reading: [OpenAI MRC](https://arxiv.org/pdf/2605.04333)
   * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
   * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
 - 10/29 Th: NCCLX
@@ -101,7 +101,9 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 ### RL, Agentic AI, and Power
 
-- 11/5 Th: 
+- 11/5 Th: Agentic AI
+  * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
+  * Optional Reading: [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985)
 - 11/10 Tu:
 - 11/12 Th: Post-training; Reinforcement learning
   * Reading: Verl
