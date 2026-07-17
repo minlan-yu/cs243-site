@@ -63,6 +63,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: [Hugging Face Playbook - Expert Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#expert_parallelism)
   
 ### LLM Inferences
+- 9/24 Th: 
 - 9/29 Tu: LLM serving
   * Reading: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180)
   * Optional Reading: [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/system/files/osdi22-yu.pdf) (OSDI 2022)
@@ -70,7 +71,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 10/6 Tu: Course project pitch presentation
 - 10/8 Th: Distributed serving (Guest lecture)
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
-- 10/13 Tu: No class: Indigenous Peoples' Day
+- 10/13 Tu: 
 - 10/15 Th: KV Cache
   * Reading: [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079)
   * Optional Reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
@@ -111,9 +112,10 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 11/12 Th: Reinforcement learning systems
   * Reading: [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](https://arxiv.org/abs/2604.09107)
   * Reading: [Accelerating RLHF with vLLM, Best Practice from OpenRLHF](https://blog.vllm.ai/2025/04/23/openrlhf-vllm.html)
-- 11/17 Tu: 
+- 11/17 Tu: Power
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
   * Optional Reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
+- 11/19 Th: 
 
 
 ### Final project presentation
