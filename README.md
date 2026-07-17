@@ -104,11 +104,12 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 11/5 Th: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
   * Optional Reading: [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985)
-- 11/10 Tu:
+- 11/10 Tu: Reinforcement learning systems
+  * Reading: [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](https://arxiv.org/abs/2604.09107)
+  * Reading: [Accelerating RLHF with vLLM, Best Practice from OpenRLHF](https://blog.vllm.ai/2025/04/23/openrlhf-vllm.html)
 - 11/12 Th: Post-training; Reinforcement learning
   * Reading: [Verl (HybridFlow: A Flexible and Efficient RLHF Framework)](https://arxiv.org/abs/2409.19256)
   * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
-  * Reading: [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](https://arxiv.org/abs/2604.09107)
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
 - 11/17 Tu: 
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
@@ -212,7 +213,7 @@ The first four milestones (initial proposal, pitch presentation, midterm report,
 
 ### Policy on AI tools
 - **Paper reviews:** You are **not allowed** to use any AI tools (e.g., ChatGPT, Claude, Copilot) for writing paper reviews. Reviews must reflect your own reading and understanding of the papers. Violations of this policy will be considered academic misconduct.
-- **Course projects:** You are allowed to use AI tools for course projects (e.g., for coding, debugging, or brainstorming). Any such use must be appropriately acknowledged and cited in your project report. It is each student’s responsibility to assess the validity and applicability of any AI-generated output that is submitted; you bear the final responsibility. Violations of this policy will be considered academic misconduct.
+- **Course projects:** You are highly encouraged to use AI tools for course projects (e.g., for coding, debugging, or brainstorming). Any such use must be appropriately acknowledged and cited in your project report. It is each student’s responsibility to assess the validity and applicability of any AI-generated output that is submitted; you bear the final responsibility. Violations of this policy will be considered academic misconduct.
 
 We draw your attention to the fact that different classes at Harvard could implement different AI policies, and it is the student’s responsibility to conform to expectations for each course. There are also [Harvard guidelines for GAI tools](https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard). 
 
