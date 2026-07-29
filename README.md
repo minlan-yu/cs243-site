@@ -84,16 +84,16 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 ### Networking and Communication
 
-- 10/20 Tu: RDMA
+- 10/20 Tu: Tu: NCCLX
+  * Reading: [Collective Communication for 100k+ GPUs](https://arxiv.org/abs/2510.20171)
+  * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
+- 10/22 Th: RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
   * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf)
-- 10/22 Th: AI networking
+- 10/27 AI networking (Guest speaker: Mario Baldi)
   * Reading: [OpenAI MRC](https://arxiv.org/pdf/2605.04333)
   * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
   * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
-- 10/27 Tu: NCCLX
-  * Reading: [Collective Communication for 100k+ GPUs](https://arxiv.org/abs/2510.20171)
-  * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
 - 10/29 Th: Fused kernel
   * Reading: [MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs](https://arxiv.org/abs/2512.22219)
   * Optional Reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
