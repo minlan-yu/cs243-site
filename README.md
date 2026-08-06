@@ -71,7 +71,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
   * Optional Reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
 - 10/1 Th: Course project pitch presentation
 - 10/6 Tu: Course project pitch presentation
-- 10/8 Th: Distributed serving (Guest lecture)
+- 10/8 Th: Distributed serving (Guest speaker: Raj Joshi, Red Hat)
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
 - 10/13 Tu: Inference kernel optimization
   * Reading: [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)
@@ -90,7 +90,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 10/22 Th: RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
   * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf)
-- 10/27 AI networking (Guest speaker: Mario Baldi)
+- 10/27 AI networking (Guest speaker: Mario Baldi, Nvidia)
   * Reading: [OpenAI MRC](https://arxiv.org/pdf/2605.04333)
   * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
   * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
