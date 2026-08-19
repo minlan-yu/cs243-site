@@ -26,7 +26,7 @@ There are no required textbooks for the course. You will read papers before each
 
 ## Coursework and Grading
 - Project: 50% (1% project proposal, 4% initial project presentation, 5% mid-term report, 5% final project presentation, 35% final report and code)
-- Class presentation: 40%
+- Class presentation: 40% (8% for project presentation; 5%x4 for in-depth review report; 3%x4 for in-depth review discussion in class)
 - Class participation: 10% (including class attendance, in-class discussion, and online discussion on Ed)
 
 Please see the detailed requirements after the syllabus.
