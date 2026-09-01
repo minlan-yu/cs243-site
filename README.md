@@ -66,11 +66,11 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - 9/24 Th: LLM serving
   * Reading: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180)
   * Optional Reading: [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/system/files/osdi22-yu.pdf) (OSDI 2022)
-- 9/29 Tu: KV Cache
+- 9/29 Tu: Course project pitch presentation
+- 10/1 Th: Course project pitch presentation
+- 10/6 Tu: KV Cache
   * Reading: [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079)
   * Optional Reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
-- 10/1 Th: Course project pitch presentation
-- 10/6 Tu: Course project pitch presentation
 - 10/8 Th: Distributed serving (Guest speaker: Raj Joshi, Red Hat)
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
 - 10/13 Tu: Inference kernel optimization
@@ -166,7 +166,7 @@ The semester-long project is an open-ended systems research project. Project top
 - 9/13 Sun at noon: Form groups for course projects
 - 9/27 Sun at noon: Course project proposal
 - 9/28-10/2: Schedule individual meetings with Minlan to get feedback on your project proposal
-- 10/6 Tu: Course project pitch presentation
+- 9/29 Tu, 10/1 Th: Course project pitch presentation
 - 11/8 Sun at noon: Midterm project report due at noon
 - 11/9-13: Schedule individual meetings with Minlan to get feedback on your midterm report
 - 11/24 Tu, 12/1 Tu, 12/3 Th: Final project presentation
