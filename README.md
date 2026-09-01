@@ -26,8 +26,8 @@ There are no required textbooks for the course. You will read papers before each
 
 ## Coursework and Grading
 - Project: 50% (1% project proposal, 4% initial project presentation, 5% mid-term report, 5% final project presentation, 35% final report and code)
-- Class presentation: 40% (8% for project presentation; 5%x4 for in-depth review report; 3%x4 for in-depth review discussion in class)
-- Class participation: 10% (including class attendance, in-class discussion, and online discussion on Ed)
+- Class presentation: 40% (8% per role, one role in each of five paper presentations; for supporting-presenter roles, 4% for the in-class presentation and 4% for the written report)
+- Attendance: 10% (missing a call-up reduces your attendance points)
 
 Please see the detailed requirements after the syllabus.
 
@@ -83,13 +83,13 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 ### Networking and Communication
 
-- 10/20 Tu: Tu: NCCLX
+- 10/20 Tu: NCCLX
   * Reading: [Collective Communication for 100k+ GPUs](https://arxiv.org/abs/2510.20171)
   * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
 - 10/22 Th: RDMA
   * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
   * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf)
-- 10/27 AI networking (Guest speaker: Mario Baldi, Nvidia)
+- 10/27 Tu: AI networking (Guest speaker: Mario Baldi, Nvidia)
   * Reading: [OpenAI MRC](https://arxiv.org/pdf/2605.04333)
   * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
   * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
@@ -139,14 +139,22 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 ## Class Presentation
 - The goal of the presentation and in-class discussion is to learn how to form your own opinions about a paper.
-- Depending on the number of students, each student will give one to three talks during the course.
-- The speaker should send their slides to me three calendar days before the presentation. In class, we expect you to know all the details of the paper and be able to answer questions during the discussion. If you have any questions about the paper, feel free to reach out to me before the class.
+- Each paper is presented by five groups of students, each with a different focus (see the roles below). Over the semester, each student signs up for five papers, taking a different role each time. A role is held by at most two students.
+- Main presenters should send their slides to me three calendar days before the presentation. In class, we expect you to know all the details of the paper and be able to answer questions during the discussion. If you have any questions about the paper, feel free to reach out to me before the class.
 - Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own opinions of the work (not just the authors').
 
+### Presentation roles
+- **Main presenters (1 group)**: an end-to-end presentation of the whole paper, 20 minutes. Slides required.
+- **Supporting presenters (4 groups)**: each group focuses on one aspect and gives a short presentation on it (12 minutes per group). Slides are optional, but encouraged if they help you give a clean presentation. After class, each supporting group submits a written report to the TF summarizing the content of their presentation. The four aspects are:
+  * Related work, and how this paper differs from it
+  * System design of the paper
+  * Evaluation
+  * Conference-style paper review: strengths and weaknesses
+- **Community QA**: before each class, every student who is not presenting posts about two paragraphs on Ed about one aspect of the paper. Two of these students are selected at random in class to present their post. If you are absent when called on, your attendance grade is reduced.
+
 ### Presentation format
-- The presentation should cover the major content of the paper, including motivation (what problem the paper is solving; why this problem wasn't solved before), challenges (why this problem is difficult to solve), system design (how the authors address the challenges), evaluation (does it demonstrate that the problems/challenges are solved?), and your personal opinions of the paper.
-- The talk should be around 45-50 minutes, excluding the review questions and discussions. This is longer than a normal conference talk to allow for more context on problem settings and detailed system design.
-- Additionally, read all the reviews submitted by your classmates, list their questions in your slides, and lead the discussion of these questions in class.
+- Together, the presentations should cover the major content of the paper, including motivation (what problem the paper is solving; why this problem wasn't solved before), challenges (why this problem is difficult to solve), system design (how the authors address the challenges), evaluation (does it demonstrate that the problems/challenges are solved?), and your personal opinions of the paper.
+- Main presenters should read the posts submitted by your classmates, list their questions in your slides, and help lead the discussion of these questions in class.
 - Be prepared to answer detailed questions about the paper during the discussion.
 - The presentation will be graded based on both content (your understanding of the paper) and presentation (your delivery of the knowledge).
 
