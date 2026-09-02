@@ -27,14 +27,14 @@ There are no required textbooks for the course. You will read papers before each
 
 ## Coursework and Grading
 - Project: 50% (1% project proposal, 4% initial project presentation, 5% mid-term report, 5% final project presentation, 35% final report and code)
-- Class presentation: 40% (8% per role, one role in each of five paper presentations; for supporting-presenter roles, 4% for the in-class presentation and 4% for the written report)
+- Class presentation: 40% (8% per role, one role in each of five paper presentations; for the four report roles, 4% for the in-class presentation/discussion and 4% for the report)
 - Attendance: 10% (before-class posts; missing a call-up reduces your attendance points)
 
 Please see the detailed requirements after the syllabus.
 
 ## Syllabus
 
-The papers we read emphasize distributed systems and networking in ML Systems. Ed review posts start from the 9/15 class.
+The papers we read emphasize distributed systems and networking in ML Systems. Ed posts start from the 9/15 class.
 
 ### Introduction
 
@@ -79,7 +79,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. E
   * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
 - 10/15 Th: Diffusion inference
   * Reading: [DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models](https://arxiv.org/abs/2402.19481)
-  * Optional Reading: [Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models](https://www.usenix.org/system/files/nsdi24-agarwal-shubham.pdf) 
+  * Optional Reading: [Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models](https://www.usenix.org/system/files/nsdi24-agarwal-shubham.pdf)
   * Optional Reading: [PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference](https://arxiv.org/abs/2405.14430)
 
 ### Networking and Communication
@@ -134,37 +134,47 @@ The papers we read emphasize distributed systems and networking in ML Systems. E
 ## Paper reading and in-class presentations
 
 We have reformatted the course to encourage more in-class participation and discussion. The goal of the presentation and in-class discussion is to learn how to form your own opinions about a paper.
-For all the students, we have Questions and comments about the paper before the class. 
-We also select a few students who work on deep study of the readings and optional readings, and who will lead the class presentation and discussion. These students should submit slides/reports before the class. In class, we expect the selected students to know all the details of the paper and be able to answer questions during the discussion.  Students with deep study will be graded based on both the in-class presentation/discussion and the pre-class writing. If you have any questions about the paper, feel free to reach out to me before the class.
 
+Every student posts questions and comments about the paper before class. In addition, for each paper we select a few students to study the readings (and the optional readings) in depth. These students lead the class presentation and discussion, and submit slides or a report before the class. In class, we expect them to know all the details of the paper and to be able to answer questions during the discussion; they are graded on both the in-class presentation/discussion and the pre-class writing. If you have any questions about the paper, feel free to reach out to me before the class.
+
+A useful method for every role below is the three-pass approach in S. Keshav, [How to Read a Paper](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458) (ACM SIGCOMM CCR 37(3), 2007): a five-to-ten minute first pass for a bird's-eye view, a second pass of up to an hour to grasp the content but not the details, and a third pass that attempts to virtually re-implement the paper. The Ed post asks for a first or second pass; the in-depth roles ask for a third pass on one part of the paper.
 
 ### Questions and comments about the paper before the class by all the students
 
-- Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings. 
-- Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph, referring to the specific context from the paper first and then describing your comments or questions in depth. For example, rather than just asking how does this system scale to 10K GPUs, you should talk about the specific perspectives of the system (e.g., the paper has an evaluation of communication overhead as GPU number grows) and share your thoughts (so when we have more GPUs, the balance of compute and communication may change).  
-- Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This allows the main presenters to collect your questions for the class discussion.
-- It is acceptable to miss THREE posts throughout the course. We will count the rest of posts for your attendance score.
-- In each class, we will select two students at random to talk about their comments/questions in the post (see Community QA under Class Presentation). If you are absent when called on, your attendance grade is reduced.
+- Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings.
+- Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph, referring to the specific context from the paper first and then describing your comments or questions in depth. For example, rather than just asking how does this system scale to 10K GPUs, you should talk about the specific perspectives of the system (e.g., the paper has an evaluation of communication overhead as GPU number grows) and share your thoughts (so when we have more GPUs, the balance of compute and communication may change).
+- If you are not sure what to write about, Keshav's "five Cs" are a good place to start: **Category** (what type of paper is this?), **Context** (which other papers is it related to?), **Correctness** (do the assumptions appear to be valid?), **Contributions** (what are the paper's main contributions?), and **Clarity** (is the paper well written?).
+- Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This gives the presenting students time to collect your questions for the class discussion.
+- It is acceptable to miss THREE posts throughout the course. We will count the rest of the posts for your attendance score.
+- In each class, we will select two students at random to talk about the comments/questions in their post. If you are absent when called on, your attendance grade is reduced.
 
 ### Paper overview with slides
-- The presentation should give a 20-minute talk about the whole paper, like a conference talk.
+- Give a 20-minute talk about the whole paper, like a conference talk.
 - Cover the motivation (what problem the paper is solving; why this problem wasn't solved before) and the challenges (why this problem is difficult to solve), and tie the parts of the paper together into a single story.
+- Aim for what Keshav sets as the goal of the second pass: being able to summarize the main thrust of the paper, with supporting evidence, to someone who has not read it.
 - You should prepare slides for the talk and submit them before the class.
 - Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own understanding and opinions of the work (not just the authors').
 
 ### Related work with report
-  * Related work: what came before, and how this paper differs from it
+- Explain what came before this paper, and how this paper differs from it.
+- Build that picture the way Keshav describes doing a literature survey: start from the paper's own related-work section, then look for shared citations and repeated author names across those papers, which point to the key papers and researchers in the area. Check where those researchers have published recently, and scan the recent proceedings of those venues for work that postdates this paper.
+- Where the paper claims to improve on prior work, say whether the comparison is a fair one, and flag any citations you think are missing.
 
 ### System design with report
-  how the authors address the challenges
+- Explain how the authors address the challenges.
+- Take Keshav's third pass: attempt to virtually re-implement the design, making the same assumptions the authors made. Identify and challenge every assumption, and say where you would have made a different choice, and why.
+- By the end you should be able to reconstruct the structure of the design from memory, and to pinpoint the assumptions it leaves implicit.
 
 ### Evaluation with report
-  does it demonstrate that the problems and challenges are solved?
-  
+- Explain whether the evaluation demonstrates that the problems and challenges are solved.
+- Look carefully at the figures, and pay special attention to the graphs: are the axes properly labeled? Are results shown with error bars, so that the conclusions are statistically significant? As Keshav puts it, mistakes like these separate rushed, shoddy work from the truly excellent.
+- Say whether the paper gives enough information to reproduce the experiments, and call out any problems you see with the experimental or analytical technique.
+
 ### Future looking with report
- Conference-style paper review: strengths and weaknesses, and your own opinions of the paper
- summarize any other interesting points from the posts on Ed
- Students on this role should read the posts submitted by your classmates, list their questions in your slides, and help lead the discussion of these questions in class.
+- Give a conference-style paper review: strengths and weaknesses, and your own opinions of the paper.
+- Use the third pass to pinpoint the paper's strong and weak points and its hidden failings, and, as Keshav suggests, to jot down ideas for future work: what would you do next if this were your project?
+- Summarize any other interesting points from the posts on Ed.
+- Students in this role should read the posts submitted by your classmates, list their questions in your slides, and help lead the discussion of these questions in class.
 
 ## Projects
 The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Top projects will be invited to continue working over the winter break to submit peer-reviewed papers to [ICLR 2027 workshops](https://iclr.cc/) and [ICML 2027](https://icml.cc/).
@@ -180,7 +190,7 @@ The semester-long project is an open-ended systems research project. Project top
 - 12/17 Review of other students' projects due at midnight
 
 ### Project Proposal
-The project proposal serves as a checkpoint, providing a basis for your pitch presentations. 
+The project proposal serves as a checkpoint, providing a basis for your pitch presentations.
 Please check out the guidelines for pitch presentation below on what to write in your project proposal.
 **You will receive the full 1% grade if you submit your proposal on time.** Unfortunately, late submissions will not be accepted, and there is no opportunity to make up the grade. After submission, you can keep updating your proposal.
 
@@ -227,16 +237,16 @@ The report should be similar in spirit to a conference paper, spanning six pages
 - Conclusion: Summarize your work and its contributions.
 
 ### Code submission
-Together with the final report, you should submit the GitHub link of your project code. No need for superb software engineering, but ideally the code should be accompanied by enough documentation that a motivated user could attempt to replicate your results. You will need to demonstrate your product to the TFs at office hours after the final project deadline. 
+Together with the final report, you should submit the GitHub link of your project code. No need for superb software engineering, but ideally the code should be accompanied by enough documentation that a motivated user could attempt to replicate your results. You will need to demonstrate your product to the TFs at office hours after the final project deadline.
 
 ### Grading
-The first four milestones (initial proposal, pitch presentation, midterm report, final project presentations) are mainly graded based on how well you keep up with the project progress at each stage. You will also get feedback at these milestones on how to improve your projects. The final project will be graded based on: Motivation, Design, delivered system, and its evaluation. 
+The first four milestones (initial proposal, pitch presentation, midterm report, final project presentations) are mainly graded based on how well you keep up with the project progress at each stage. You will also get feedback at these milestones on how to improve your projects. The final project will be graded based on: Motivation, Design, delivered system, and its evaluation.
 
 ### Policy on AI tools
 - **Paper reviews:** You are **not allowed** to use any AI tools (e.g., ChatGPT, Claude, Copilot) for writing paper reviews. Reviews must reflect your own reading and understanding of the papers. Violations of this policy will be considered academic misconduct.
 - **Course projects:** You are highly encouraged to use AI tools for course projects (e.g., for coding, debugging, or brainstorming). Any such use must be appropriately acknowledged and cited in your project report. It is each student’s responsibility to assess the validity and applicability of any AI-generated output that is submitted; you bear the final responsibility. Violations of this policy will be considered academic misconduct.
 
-We draw your attention to the fact that different classes at Harvard could implement different AI policies, and it is the student’s responsibility to conform to expectations for each course. There are also [Harvard guidelines for GAI tools](https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard). 
+We draw your attention to the fact that different classes at Harvard could implement different AI policies, and it is the student’s responsibility to conform to expectations for each course. There are also [Harvard guidelines for GAI tools](https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard).
 
 ## Diversity and Inclusion
 I would like to create a learning environment in our class that supports a diversity of thoughts, perspectives and experiences, and honours your identities (including race, gender, class, sexuality, socioeconomic status, religion, ability, etc.). I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. As a participant in course discussions, you should also strive to honour the diversity of your classmates. (Statement extracted from one by Dr. Monica Linden at Brown University.)
