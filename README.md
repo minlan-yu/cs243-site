@@ -135,7 +135,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. E
 
 We have reformatted the course to encourage more in-class participation and discussion. The goal of the presentation and in-class discussion is to learn how to form your own opinions about a paper.
 
-Every student posts questions and comments about the paper before class. In addition, for each paper we select a few students to study the readings (and the optional readings) in depth. Each paper has five such roles — paper overview, related work, system design, evaluation, and future looking — and each role is taken by two or three students, who prepare and present it together. Over the semester, every student signs up for five papers, taking a different role each time. These students lead the class presentation and discussion, and submit slides or a report before the class. In class, we expect them to know all the details of the paper and to be able to answer questions during the discussion; they are graded on both the in-class presentation/discussion and the pre-class writing. If you have any questions about the paper, feel free to reach out to me before the class.
+Every student posts questions and comments about the paper before class. In addition, for each paper we select a few students to study the readings (and the optional readings) in depth. Each paper has five such roles — paper overview, related work, system design, evaluation, and future looking — and each role is taken by two or three students, who prepare and present it together. Over the semester, every student signs up for five papers, taking a different role each time. The presentation times given below are approximate: we may be flexible about how the time is allocated across the five roles from paper to paper, depending on which parts of a particular paper are worth the most discussion. These students lead the class presentation and discussion, and submit slides or a report before the class. In class, we expect them to know all the details of the paper and to be able to answer questions during the discussion; they are graded on both the in-class presentation/discussion and the pre-class writing. If you have any questions about the paper, feel free to reach out to me before the class.
 
 A useful method for every role below is the three-pass approach in S. Keshav, [How to Read a Paper](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458) (ACM SIGCOMM CCR 37(3), 2007): a five-to-ten minute first pass for a bird's-eye view, a second pass of up to an hour to grasp the content but not the details, and a third pass that attempts to virtually re-implement the paper. The Ed post asks for a first or second pass; the in-depth roles ask for a third pass on one part of the paper.
 
@@ -150,32 +150,32 @@ A useful method for every role below is the three-pass approach in S. Keshav, [H
 - To avoid an attendance deduction for a class you cannot attend, email the TF about your absence **before** the class.
 
 ### Paper overview with slides
-- Give a 20-minute talk about the whole paper, like a conference talk.
+- Give a talk about the whole paper, roughly 20 minutes, like a conference talk.
 - Cover the motivation (what problem the paper is solving; why this problem wasn't solved before) and the challenges (why this problem is difficult to solve), and tie the parts of the paper together into a single story.
 - Aim for what Keshav sets as the goal of the second pass: being able to summarize the main thrust of the paper, with supporting evidence, to someone who has not read it.
 - You should prepare slides for the talk and submit them before the class.
 - Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own understanding and opinions of the work (not just the authors').
 
 ### Related work with report
-- Give a 10-minute presentation in class.
+- Give a presentation in class, roughly 10 minutes.
 - Explain what came before this paper, and how this paper differs from it.
 - Build that picture the way Keshav describes doing a literature survey: start from the paper's own related-work section, then look for shared citations and repeated author names across those papers, which point to the key papers and researchers in the area. Check where those researchers have published recently, and scan the recent proceedings of those venues for work that postdates this paper.
 - Where the paper claims to improve on prior work, say whether the comparison is a fair one, and flag any citations you think are missing.
 
 ### System design with report
-- Give a 10-minute presentation in class.
+- Give a presentation in class, roughly 10 minutes.
 - Explain how the authors address the challenges.
 - Take Keshav's third pass: attempt to virtually re-implement the design, making the same assumptions the authors made. Identify and challenge every assumption, and say where you would have made a different choice, and why.
 - By the end you should be able to reconstruct the structure of the design from memory, and to pinpoint the assumptions it leaves implicit.
 
 ### Evaluation with report
-- Give a 10-minute presentation in class.
+- Give a presentation in class, roughly 10 minutes.
 - Explain whether the evaluation demonstrates that the problems and challenges are solved.
 - Look carefully at the figures, and pay special attention to the graphs: are the axes properly labeled? Are results shown with error bars, so that the conclusions are statistically significant? As Keshav puts it, mistakes like these separate rushed, shoddy work from the truly excellent.
 - Say whether the paper gives enough information to reproduce the experiments, and call out any problems you see with the experimental or analytical technique.
 
 ### Future looking with report
-- Give a 10-minute presentation in class.
+- Give a presentation in class, roughly 10 minutes.
 - Give a conference-style paper review: strengths and weaknesses, and your own opinions of the paper.
 - Use the third pass to pinpoint the paper's strong and weak points and its hidden failings, and, as Keshav suggests, to jot down ideas for future work: what would you do next if this were your project?
 - Summarize any other interesting points from the posts on Ed.
