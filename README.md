@@ -28,7 +28,7 @@ There are no required textbooks for the course. You will read papers before each
 ## Coursework and Grading
 - Project: 50% (1% project proposal, 4% initial project presentation, 5% mid-term report, 5% final project presentation, 35% final report and code)
 - Class presentation: 40% (8% per role, one role in each of five paper presentations; for supporting-presenter roles, 4% for the in-class presentation and 4% for the written report)
-- Attendance: 10% (missing a call-up reduces your attendance points)
+- Attendance: 10% (before-class posts; missing a call-up reduces your attendance points)
 
 Please see the detailed requirements after the syllabus.
 
@@ -131,32 +131,40 @@ The papers we read emphasize distributed systems and networking in ML Systems. E
 - 12/3 Th: Final project presentation (batch III)
 - 12/16 Final Project Deadline (updated based on school examination group and dates)
 
-## Reviews
-- The reviews aim to help you become comfortable reading research papers on networking and systems.
-- Before each class, post a short review on Ed: about two paragraphs on one aspect of the paper. This replaces the longer written review used in previous years.
-- Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This allows the main presenters to collect your questions for the class discussion. For lectures with guest speakers, the TF will collect the questions. Please raise your questions during class.
-- Two students are selected at random in each class to present their post (see Community QA under Class Presentation). If you are absent when called on, your attendance grade is reduced.
-- It is acceptable to miss THREE posts throughout the course.
+## Paper reading and in-class presentations
 
-## Class Presentation
-- The goal of the presentation and in-class discussion is to learn how to form your own opinions about a paper.
-- Each paper is presented by five groups of students, each with a different focus (see the roles below). Over the semester, each student signs up for five papers, taking a different role each time. A role is held by at most two students.
-- Main presenters should send their slides to me three calendar days before the presentation. In class, we expect you to know all the details of the paper and be able to answer questions during the discussion. If you have any questions about the paper, feel free to reach out to me before the class.
-- Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own opinions of the work (not just the authors').
+We have reformatted the course to encourage more in-class participation and discussion. The goal of the presentation and in-class discussion is to learn how to form your own opinions about a paper.
+For all the students, we have Questions and comments about the paper before the class. 
+We also select a few students who work on deep study of the readings and optional readings, and who will lead the class presentation and discussion. These students should submit slides/reports before the class. In class, we expect the selected students to know all the details of the paper and be able to answer questions during the discussion.  Students with deep study will be graded based on both the in-class presentation/discussion and the pre-class writing. If you have any questions about the paper, feel free to reach out to me before the class.
 
-### Presentation roles
-- **Main presenters (1 group)**: an end-to-end presentation of the whole paper, 20 minutes. Cover the motivation (what problem the paper is solving; why this problem wasn't solved before) and the challenges (why this problem is difficult to solve), and tie the parts of the paper together into a single story. Slides required.
-- **Supporting presenters (4 groups)**: each group focuses on one aspect and gives a short presentation on it (12 minutes per group). Slides are optional, but encouraged if they help you give a clean presentation. After class, each supporting group submits a written report to the TF summarizing the content of their presentation. The four aspects are:
+
+### Questions and comments about the paper before the class by all the students
+
+- Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings. 
+- Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph, referring to the specific context from the paper first and then describing your comments or questions in depth. For example, rather than just asking how does this system scale to 10K GPUs, you should talk about the specific perspectives of the system (e.g., the paper has an evaluation of communication overhead as GPU number grows) and share your thoughts (so when we have more GPUs, the balance of compute and communication may change).  
+- Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This allows the main presenters to collect your questions for the class discussion.
+- It is acceptable to miss THREE posts throughout the course. We will count the rest of posts for your attendance score.
+- In each class, we will select two students at random to talk about their comments/questions in the post (see Community QA under Class Presentation). If you are absent when called on, your attendance grade is reduced.
+
+### Paper overview with slides
+- The presentation should give a 20-minute talk about the whole paper, like a conference talk.
+- Cover the motivation (what problem the paper is solving; why this problem wasn't solved before) and the challenges (why this problem is difficult to solve), and tie the parts of the paper together into a single story.
+- You should prepare slides for the talk and submit them before the class.
+- Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own understanding and opinions of the work (not just the authors').
+
+### Related work with report
   * Related work: what came before, and how this paper differs from it
-  * System design: how the authors address the challenges
-  * Evaluation: does it demonstrate that the problems and challenges are solved?
-  * Conference-style paper review: strengths and weaknesses, and your own opinions of the paper
-- **Community QA**: everyone who is not presenting posts a short review on Ed before class (see the Reviews section above). Two of these students are selected at random in class to present their post. If you are absent when called on, your attendance grade is reduced.
 
-### Presentation format
-- Main presenters should read the posts submitted by your classmates, list their questions in your slides, and help lead the discussion of these questions in class.
-- Be prepared to answer detailed questions about the paper during the discussion.
-- The presentation will be graded based on both content (your understanding of the paper) and presentation (your delivery of the knowledge).
+### System design with report
+  how the authors address the challenges
+
+### Evaluation with report
+  does it demonstrate that the problems and challenges are solved?
+  
+### Future looking with report
+ Conference-style paper review: strengths and weaknesses, and your own opinions of the paper
+ summarize any other interesting points from the posts on Ed
+ Students on this role should read the posts submitted by your classmates, list their questions in your slides, and help lead the discussion of these questions in class.
 
 ## Projects
 The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Top projects will be invited to continue working over the winter break to submit peer-reviewed papers to [ICLR 2027 workshops](https://iclr.cc/) and [ICML 2027](https://icml.cc/).
