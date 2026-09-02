@@ -34,7 +34,7 @@ Please see the detailed requirements after the syllabus.
 
 ## Syllabus
 
-The papers we read emphasize distributed systems and networking in ML Systems. Review submission starts from 9/15 class.
+The papers we read emphasize distributed systems and networking in ML Systems. Ed review posts start from the 9/15 class.
 
 ### Introduction
 
@@ -133,10 +133,10 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 
 ## Reviews
 - The reviews aim to help you become comfortable reading research papers on networking and systems.
-- Students are expected to write reviews for the papers discussed in each class. Scores will be based on the top 90% of the reviews, meaning it is acceptable to miss THREE reviews throughout the course.
-- Reviews are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This allows the presenter to collect all your questions for class discussion. For lectures with guest speakers, the TF will collect the questions. Please raise your questions during class.
-- Reviews submitted within a week after the deadline only get half of the scores. Reviews submitted later than that do not get any scores.
-- Detailed review questions are available in HotCRP. In addition to the general review questions, each paper may have a specific question.
+- Before each class, post a short review on Ed: about two paragraphs on one aspect of the paper. This replaces the longer written review used in previous years.
+- Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This allows the main presenters to collect your questions for the class discussion. For lectures with guest speakers, the TF will collect the questions. Please raise your questions during class.
+- Two students are selected at random in each class to present their post (see Community QA under Class Presentation). If you are absent when called on, your attendance grade is reduced.
+- It is acceptable to miss THREE posts throughout the course.
 
 ## Class Presentation
 - The goal of the presentation and in-class discussion is to learn how to form your own opinions about a paper.
@@ -145,16 +145,15 @@ The papers we read emphasize distributed systems and networking in ML Systems. R
 - Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own opinions of the work (not just the authors').
 
 ### Presentation roles
-- **Main presenters (1 group)**: an end-to-end presentation of the whole paper, 20 minutes. Slides required.
+- **Main presenters (1 group)**: an end-to-end presentation of the whole paper, 20 minutes. Cover the motivation (what problem the paper is solving; why this problem wasn't solved before) and the challenges (why this problem is difficult to solve), and tie the parts of the paper together into a single story. Slides required.
 - **Supporting presenters (4 groups)**: each group focuses on one aspect and gives a short presentation on it (12 minutes per group). Slides are optional, but encouraged if they help you give a clean presentation. After class, each supporting group submits a written report to the TF summarizing the content of their presentation. The four aspects are:
-  * Related work, and how this paper differs from it
-  * System design of the paper
-  * Evaluation
-  * Conference-style paper review: strengths and weaknesses
-- **Community QA**: before each class, every student who is not presenting posts about two paragraphs on Ed about one aspect of the paper. Two of these students are selected at random in class to present their post. If you are absent when called on, your attendance grade is reduced.
+  * Related work: what came before, and how this paper differs from it
+  * System design: how the authors address the challenges
+  * Evaluation: does it demonstrate that the problems and challenges are solved?
+  * Conference-style paper review: strengths and weaknesses, and your own opinions of the paper
+- **Community QA**: everyone who is not presenting posts a short review on Ed before class (see the Reviews section above). Two of these students are selected at random in class to present their post. If you are absent when called on, your attendance grade is reduced.
 
 ### Presentation format
-- Together, the presentations should cover the major content of the paper, including motivation (what problem the paper is solving; why this problem wasn't solved before), challenges (why this problem is difficult to solve), system design (how the authors address the challenges), evaluation (does it demonstrate that the problems/challenges are solved?), and your personal opinions of the paper.
 - Main presenters should read the posts submitted by your classmates, list their questions in your slides, and help lead the discussion of these questions in class.
 - Be prepared to answer detailed questions about the paper during the discussion.
 - The presentation will be graded based on both content (your understanding of the paper) and presentation (your delivery of the knowledge).
