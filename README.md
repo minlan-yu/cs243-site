@@ -144,7 +144,7 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 - Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings.
 - Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph, referring to the specific context from the paper first and then describing your comments or questions in depth. For example, rather than just asking how this system scales to 10K GPUs, you should talk about the specific perspectives of the system (e.g., the paper has an evaluation of communication overhead as the GPU number grows) and share your thoughts (so when we have more GPUs, the balance of compute and communication may change).
 - Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This gives the presenting students time to collect your questions for the class discussion.
-- Make sure to select the corresponding tag (e.g., **paper-09-15** for the class on Sept 15) for each EdStem post.
+- Make sure to select the corresponding tag (e.g., **comment-09-15** for the class on Sept 15) for each EdStem post.
 - It is acceptable to miss THREE posts throughout the course. We will count the rest of the posts for your attendance score.
 - In each class, we will select two students at random to talk about the comments/questions in their posts. If you are absent when called on, your attendance grade is reduced.
 - To avoid an attendance deduction for a class you cannot attend, email the TF about your absence **before** the class with your reasons.
@@ -153,7 +153,7 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 - Give a talk about the whole paper, roughly 15-20 minutes, like a conference talk.
 - Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own understanding and opinions of the work (not just the authors').
 
-The remaining four roles are expected to lead the discussions (10-15 minutes each). You are not required to prepare slides, but if you have figures/slides to show on the screen, you are welcome to submit these materials together with your report on Ed before class too. 
+**The remaining four roles are expected to lead the discussions (10-15 minutes each). You are not required to prepare slides, but if you have figures/slides to show on the screen, you are welcome to submit these materials together with your report on Ed before class too.** 
 
 ### The lineage (backgrounds and related work)
 - The report studies the broader scope of the topic; the important papers in this topic; and how the paper differs from them
@@ -168,15 +168,12 @@ The remaining four roles are expected to lead the discussions (10-15 minutes eac
 - Look carefully at the figures, and pay special attention to the graphs. Do you agree with the system settings for the evaluation? Would you have the same conclusion from the graphs as the authors? What additional experiments or graphs would you like to generate for the paper that better demonstrate the pros/cons of the system design?
 
 ### The verdict (critique and future work)
-- This report studies today's and future views of this paper. Do you think the paper still has value in the next five years? Why and why not? Do the assumptions/settings of the paper change today or in the future? What do you predict as the trend? Any new opportunities in the future that would make the system design in the paper easier or harder?
+- This report studies today's and future views of this paper. Do you think the paper still has value in the next five years? Why or why not? Do the assumptions/settings of the paper change today or in the future? What do you predict as the trend? Any new opportunities in the future that would make the system design in the paper easier or harder?
 - You are also responsible for reading all the posts and extracting interesting ones to bring to the class discussion.
 
-### Report logistics (the lineage, the mechanism, the evidence, the verdict)
-
-- Each group submits **one page** for its report. References do not count toward the page limit — cite as many papers as you need.
-- Organize the report around the reading pass named in your role above, and report what that pass produced: for the lineage, the papers and researchers the survey turned up; for the mechanism, the assumptions you identified and challenged; for the evidence, what the figures do and do not establish; for the verdict, the strong and weak points and the directions you would pursue next.
-- Slides are optional for these four roles, but encouraged if they help you give a clean presentation.
-- Send the report to the TF before the class. One report per group, not per student.
+### Report logistics 
+- The story group submits the slides before the class on Ed with a tag like **Present-09-15**.
+- Each group (the lineage, the mechanism, the evidence, the verdict) submits **one page** for its report with a tag like **lineage-09-15**. References do not count toward the page limit. One report per group, not per student.
 
 ## Projects
 The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Top projects will be invited to continue working over the winter break to submit peer-reviewed papers to [ICLR 2027 workshops](https://iclr.cc/) and [ICML 2027](https://icml.cc/).
@@ -193,11 +190,11 @@ The semester-long project is an open-ended systems research project. Project top
 
 ### Project Proposal
 The project proposal serves as a checkpoint, providing a basis for your pitch presentations.
-Please check out the guidelines for pitch presentation below on what to write in your project proposal.
+Please check out the guidelines for pitch presentations below on what to write in your project proposal.
 **You will receive the full 1% grade if you submit your proposal on time.** Unfortunately, late submissions will not be accepted, and there is no opportunity to make up the grade. After submission, you can keep updating your proposal.
 
 ### Project pitch presentation
-Each group should deliver a 5-minute talk followed by 2-3 minutes of Q&A. Be mindful about the scope of your project to ensure it can be completed by your team within two and a half months.
+Each group should deliver a 5-minute talk followed by 2-3 minutes of Q&A. Be mindful of the scope of your project to ensure it can be completed by your team within two and a half months.
 The presentation should be 4-6 slides and include the following points:
 - What problem are you solving?
 - Why is it an important problem?
