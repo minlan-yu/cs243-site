@@ -4,13 +4,13 @@
 
 This is a graduate-level course on computer networks that offers an in-depth exploration of selected advanced topics in networked systems. We will discuss the latest developments across the entire networking stack, the interactions between networks and high-level applications, and their connections with other system components such as computing and storage.
 
-The course focuses on the intersection of machine learning and networking. As ML applications increasingly rely on larger models, longer contexts, and faster accelerators — from large-scale distributed training to efficient inference serving — the demand for enhanced networking capabilities becomes imperative. We will study cutting-edge networking solutions and principles for co-designing networks with computing and storage, covering topics such as parallelism strategies, collective communication, RDMA, congestion control, fault tolerance, and production ML infrastructure. The course will include lectures, in-class presentations, paper discussions, and a research project.
+The course focuses on the intersection of machine learning and networking. As ML applications increasingly rely on larger models, longer contexts, and faster accelerators — from large-scale distributed training to efficient inference serving — the demands on the network grow just as quickly. We will study cutting-edge networking solutions and principles for co-designing networks with computing and storage, covering topics such as parallelism strategies, collective communication, RDMA, congestion control, fault tolerance, and production ML infrastructure. The course will include lectures, in-class presentations, paper discussions, and a research project.
 
 - Instructor: Minlan Yu
 - Lecture time: TuTh 11:15 am to 12:30 pm
 - Location: SEC 1.402
 - Office hours: Tu 10-11 am, SEC 4.415
-- Teaching fellows: Weifan Jiang (weifanjiang@g.harvard.edu). Office hours TBD or by email appointment.
+- Teaching fellow: Weifan Jiang (weifanjiang@g.harvard.edu). Office hours TBD, or by appointment over email.
 - Prerequisite: This course has no prerequisites. Since this course will focus on reading papers on the latest topics in networking, you will need to be able to pick up the relevant background for each topic from textbooks or online materials.
 - Recommended prep: system programming at the level of CS 61, CS 143, or CS 145.
 
@@ -19,14 +19,14 @@ The course focuses on the intersection of machine learning and networking. As ML
 **If you are thinking of attending the class, please check [the infrastructure page](infra.md) to set up your cloud infrastructure and try the [warmup project](warmup.md) as soon as possible.**
 
 ## Textbook
-There are no required textbooks for the course. You will read papers before each class to get the most out of the class. For background, you are encouraged to refer to the following references:
+There are no required textbooks for the course. You will read papers before each class to get the most out of the class. For background, you are encouraged to consult the following:
 - For basic networking concepts, you can refer to the textbook (K&R) Computer Networking: A Top-Down Approach by Jim Kurose and Keith Ross. The latest edition is the 8th, but earlier editions are fine.
 - An alternative book is Computer Networks: A Systems Approach, by Larry Peterson and Bruce Davie. You can find an online version [here](https://book.systemsapproach.org/).
-- For large-scale training and the parallelism schemes we cover, [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) from Hugging Face is a helpful reference. 
-- Please feel free to contact me if some concepts are difficult to understand; I'll provide more supplemental materials.
+- For large-scale training and the parallelism schemes we cover, [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) from Hugging Face is a helpful reference.
+- Please feel free to contact me if any concepts are difficult to understand; I'll point you to more supplemental materials.
 
 ## Coursework and Grading
-- Project: 50% (1% project proposal, 4% initial project presentation, 5% mid-term report, 5% final project presentation, 35% final report and code)
+- Project: 50% (1% project proposal, 4% project pitch presentation, 5% midterm report, 5% final project presentation, 35% final report and code)
 - Class presentation: 40% (8% per role, one role in each of five paper presentations; for the four report roles, 4% for the in-class presentation/discussion and 4% for the report)
 - Attendance: 10% (before-class posts; missing a call-up reduces your attendance points)
 
@@ -34,83 +34,83 @@ Please see the detailed requirements after the syllabus.
 
 ## Syllabus
 
-The papers we read emphasize distributed systems and networking in ML Systems. Ed posts and in-class presentations start from the 9/15 class.
+The papers we read emphasize distributed systems and networking in ML systems. Ed posts and in-class presentations start from the 9/15 class.
 
 ### Introduction
 
 - 9/3 Th: Introduction (Minlan)
   * Optional reading: [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783)
-- 9/8 Tu: Transformer, scaling law, Hardware, high-level course project ideas (Minlan)
-  * Optional Reading: [Transformer illustrated](https://jalammar.github.io/illustrated-transformer/)
+- 9/8 Tu: Transformers, scaling laws, hardware, and high-level course project ideas (Minlan)
+  * Optional reading: [Transformer illustrated](https://jalammar.github.io/illustrated-transformer/)
 
 ### Distributed Training (Parallelism schemes and Communication)
 
 - 9/10 Th: Data Parallelism and Sharding (Minlan)
   * Reading: [PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel](https://arxiv.org/abs/2304.11277)
   * Reading: [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054)
-  * Optional Reading: [Hugging Face Playbook - Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism)
+  * Optional reading: [Hugging Face Playbook - Data Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#data_parallelism)
 - 9/15 Tu: Model Parallelism and Pipelining
   * Reading: [PipeDream: Generalized Pipeline Parallelism for DNN Training](https://dl.acm.org/doi/10.1145/3341301.3359646)
-  * Optional Reading: [Hugging Face Playbook - Pipeline Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#pipeline_parallelism)
+  * Optional reading: [Hugging Face Playbook - Pipeline Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#pipeline_parallelism)
 - 9/17 Th: Tensor Parallelism, Sequence Parallelism, Context Parallelism
   * Reading: [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](https://arxiv.org/pdf/2104.04473.pdf)
   * Reading: [LoongServe: Efficiently Serving Long-Context Large Language Models with Elastic Sequence Parallelism](https://dl.acm.org/doi/10.1145/3694715.3695948)
-  * Optional Reading: [Hugging Face Playbook - Tensor Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#tensor_parallelism), [Sequence Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#sequence_parallelism), and [Context Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#context_parallelism)
+  * Optional reading: [Hugging Face Playbook - Tensor Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#tensor_parallelism), [Sequence Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#sequence_parallelism), and [Context Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#context_parallelism)
 - 9/22 Tu: Mixture of Experts
   * Reading: [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)
   * Reading: [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://dl.acm.org/doi/epdf/10.1145/3695053.3731412)
-  * Optional Reading: [MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism](https://arxiv.org/abs/2504.02263)
-  * Optional Reading: [Hugging Face Playbook - Expert Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#expert_parallelism)
+  * Optional reading: [MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism](https://arxiv.org/abs/2504.02263)
+  * Optional reading: [Hugging Face Playbook - Expert Parallelism](https://nanotron-ultrascale-playbook.static.hf.space/#expert_parallelism)
   
-### LLM Inferences
+### LLM Inference
 - 9/24 Th: LLM serving
   * Reading: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180)
-  * Optional Reading: [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/system/files/osdi22-yu.pdf) (OSDI 2022)
+  * Optional reading: [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/system/files/osdi22-yu.pdf) (OSDI 2022)
 - 9/29 Tu: Course project pitch presentation
 - 10/1 Th: Course project pitch presentation
 - 10/6 Tu: KV Cache
   * Reading: [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079)
-  * Optional Reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
+  * Optional reading: [CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving](https://arxiv.org/abs/2310.07240)
 - 10/8 Th: Distributed serving (Guest speaker: Raj Joshi, Red Hat)
   * Reading: [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf)
 - 10/13 Tu: Inference kernel optimization
   * Reading: [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)
   * Reading: [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
-  * Optional Reading: background on GPUs: [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
+  * Optional reading: background on GPUs — [Stanford CS336 Lecture 5 (GPUs, TPUs)](https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf)
 - 10/15 Th: Diffusion inference
   * Reading: [DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models](https://arxiv.org/abs/2402.19481)
-  * Optional Reading: [Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models](https://www.usenix.org/system/files/nsdi24-agarwal-shubham.pdf)
-  * Optional Reading: [PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference](https://arxiv.org/abs/2405.14430)
+  * Optional reading: [Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models](https://www.usenix.org/system/files/nsdi24-agarwal-shubham.pdf)
+  * Optional reading: [PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference](https://arxiv.org/abs/2405.14430)
 
 ### Networking and Communication
 
 - 10/20 Tu: NCCLX
   * Reading: [Collective Communication for 100k+ GPUs](https://arxiv.org/abs/2510.20171)
-  * Optional Reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
+  * Optional reading: [Enabling Efficient GPU Communication over Multiple NICs with FuseLink](https://www.usenix.org/system/files/osdi25-ren.pdf)
 - 10/22 Th: RDMA
-  * Reading: [RDMA over Ethernet for Distributed AI Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
-  * Optional Reading: [UCCL: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf)
+  * Reading: [RDMA over Ethernet for Distributed Training at Meta Scale](https://dl.acm.org/doi/pdf/10.1145/3651890.3672233)
+  * Optional reading: [UCCL-Tran: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/system/files/osdi26-zhou-yang.pdf)
 - 10/27 Tu: AI networking (Guest speaker: Mario Baldi, Nvidia)
-  * Reading: [OpenAI MRC](https://arxiv.org/pdf/2605.04333)
-  * Optional Reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
-  * Optional Reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
+  * Reading: [Resilient AI Supercomputer Networking using MRC and SRv6](https://arxiv.org/pdf/2605.04333) (OpenAI)
+  * Optional reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
+  * Optional reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
 - 10/29 Th: Fused kernel
   * Reading: [MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs](https://arxiv.org/abs/2512.22219)
-  * Optional Reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
-  * Optional Reading: [ThunderKittens: Simple, Fast, and Adorable AI Kernels](https://arxiv.org/abs/2410.20399)
+  * Optional reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
+  * Optional reading: [ThunderKittens: Simple, Fast, and Adorable AI Kernels](https://arxiv.org/abs/2410.20399)
 
 
 ### RL, Agentic AI, and Power
 
 - 11/3 Tu: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
-  * Optional Reading: [Pie: A Programmable Serving System for Emerging LLM Applications](https://arxiv.org/abs/2510.24051)
+  * Optional reading: [Pie: A Programmable Serving System for Emerging LLM Applications](https://arxiv.org/abs/2510.24051)
 - 11/5 Th: Prompt and program optimization
   * Reading: [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457)
-  * Optional Reading: [optimize_anything: A Universal API for Optimizing any Text Parameter](https://arxiv.org/abs/2605.19633)
+  * Optional reading: [optimize_anything: A Universal API for Optimizing any Text Parameter](https://arxiv.org/abs/2605.19633)
 - 11/10 Tu: Computer use
   * Reading: [OSGym: Scalable OS Infra for Computer Use Agents](https://arxiv.org/abs/2511.11672)
-  * Optional Reading: [OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents](https://arxiv.org/abs/2506.16042)
+  * Optional reading: [OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents](https://arxiv.org/abs/2506.16042)
 - 11/12 Th: Post-training; Reinforcement learning
   * Reading: [Verl (HybridFlow: A Flexible and Efficient RLHF Framework)](https://arxiv.org/abs/2409.19256)
   * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
@@ -120,7 +120,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. E
   * Reading: [Accelerating RLHF with vLLM, Best Practice from OpenRLHF](https://blog.vllm.ai/2025/04/23/openrlhf-vllm.html)
 - 11/19 Th: Power
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
-  * Optional Reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
+  * Optional reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
 
 
 ### Final project presentation
@@ -129,7 +129,7 @@ The papers we read emphasize distributed systems and networking in ML Systems. E
 - 11/26 Th: No class: Thanksgiving
 - 12/1 Tu: Final project presentation (batch II)
 - 12/3 Th: Final project presentation (batch III)
-- 12/16 Final Project Deadline (updated based on school examination group and dates)
+- 12/16 Final project due at noon (date set by the school's examination schedule)
 
 ## Paper reading and in-class presentations
 
@@ -142,10 +142,10 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 ### Questions/comments by all the students
 
 - Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings.
-- Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph, referring to the specific context from the paper first and then describing your comments or questions in depth. For example, rather than just asking how this system scales to 10K GPUs, you should talk about the specific perspectives of the system (e.g., the paper has an evaluation of communication overhead as the GPU number grows) and share your thoughts (so when we have more GPUs, the balance of compute and communication may change).
+- Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph: point to the specific context in the paper first, then describe your comment or question in depth. For example, rather than just asking how this system scales to 10K GPUs, refer to something concrete in the paper (e.g., its evaluation of communication overhead as the number of GPUs grows) and share your own thinking (with more GPUs, the balance between compute and communication may shift).
 - Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This gives the presenting students time to collect your questions for the class discussion.
-- Make sure to select the corresponding tag (e.g., **comment-09-15** for the class on Sept 15) for each EdStem post.
-- It is acceptable to miss THREE posts throughout the course. We will count the rest of the posts for your attendance score.
+- Make sure to select the corresponding tag (e.g., **comment-09-15** for the class on Sept 15) for each Ed post.
+- You may miss up to **three** posts over the semester; the rest count toward your attendance score.
 - In each class, we will select two students at random to talk about the comments/questions in their posts. If you are absent when called on, your attendance grade is reduced.
 - To avoid an attendance deduction for a class you cannot attend, email the TF about your absence **before** the class with your reasons.
 
@@ -209,7 +209,7 @@ Please submit your slides after the presentation.
 The midterm report should be about 2-4 pages using the [ICML template](https://media.icml.cc/Conferences/ICML2025/Styles/icml2025.zip) and serve as a starting point for your final project report (see detailed requirements for the final report below). **To achieve a high score for your midterm report, it is important to deliver an initial evaluation of your system.** You don't need to complete the entire system; instead, focus on identifying the most critical component/question in your project and provide an initial quantitative evaluation. The midterm report should include the following:
 - Describe the problem you plan to solve, why it is novel/unique, and the major challenges (similar to your project pitch presentation, but feel free to adapt it based on your new understanding of the problem).
 - Describe the detailed design of your project and what you have implemented/evaluated so far.
-- Provide one quantitative evaluation figure (e.g., a performance graph) about your initial system (This will be the focus of your meeting with Minlan).
+- Provide one quantitative evaluation figure (e.g., a performance graph) about your initial system (this will be the focus of your meeting with Minlan).
 - Discuss the remaining challenges, how you plan to address them, and your plan for the remaining time.
 
 ### Final project presentations
@@ -224,7 +224,7 @@ This presentation should resemble a workshop talk. You might consider covering t
 
 
 ### Final Project Report
-The report should be similar in spirit to a conference paper, spanning six pages of double-column, single-spaced, 10-point font, excluding references. Here is an [example LaTeX framework](https://media.icml.cc/Conferences/ICML2025/Styles/icml2025.zip) for formatting and building your paper. As shown in the framework, you may consider the following sections for your report (adapted from Eddie's version):
+The report should be similar in spirit to a conference paper, spanning six pages in double-column, single-spaced, 10-point format, excluding references. Here is an [example LaTeX framework](https://media.icml.cc/Conferences/ICML2025/Styles/icml2025.zip) for formatting and building your paper. As shown in the framework, you may consider the following sections for your report (adapted from Eddie's version):
 
 - Title: Something grabby that correctly describes a part of the contribution.
 - Abstract: A paragraph or two that concisely describes the motivation for the work (the problem addressed), the contribution of the work, and a highlight of your results.
@@ -236,10 +236,10 @@ The report should be similar in spirit to a conference paper, spanning six pages
 - Conclusion: Summarize your work and its contributions.
 
 ### Code submission
-Together with the final report, you should submit the GitHub link of your project code. No need for superb software engineering, but ideally the code should be accompanied by enough documentation that a motivated user could attempt to replicate your results. You will need to demonstrate your product to the TFs at office hours after the final project deadline.
+Together with the final report, you should submit the GitHub link of your project code. The code does not need polished software engineering, but it should come with enough documentation that a motivated user could attempt to replicate your results. You will need to demo your system to the TF at office hours after the final project deadline.
 
 ### Grading
-The first four milestones (initial proposal, pitch presentation, midterm report, final project presentations) are mainly graded based on how well you keep up with the project progress at each stage. You will also get feedback at these milestones on how to improve your projects. The final project will be graded based on: Motivation, Design, the delivered system, and its evaluation.
+The first four milestones (initial proposal, pitch presentation, midterm report, final project presentations) are mainly graded based on how well you keep up with the project progress at each stage. You will also get feedback at these milestones on how to improve your projects. The final project will be graded on motivation, design, the delivered system, and its evaluation.
 
 ### Policy on AI tools
 - **Paper reading and presentations:** You are allowed to use AI tools for assistance, but all the Ed posts, slides, and reports must be written by you and contain your own thoughts. 
