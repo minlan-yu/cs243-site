@@ -143,11 +143,11 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 
 - Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings.
 - Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph, referring to the specific context from the paper first and then describing your comments or questions in depth. For example, rather than just asking how this system scales to 10K GPUs, you should talk about the specific perspectives of the system (e.g., the paper has an evaluation of communication overhead as the GPU number grows) and share your thoughts (so when we have more GPUs, the balance of compute and communication may change).
-- If you are not sure what to write about, Keshav's "five Cs" are a good place to start: **Category** (what type of paper is this?), **Context** (which other papers is it related to?), **Correctness** (do the assumptions appear to be valid?), **Contributions** (what are the paper's main contributions?), and **Clarity** (is the paper well written?).
-- Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This gives the presenting students time to collect your questions for the class discussion. Make sure to select the corresponding tag (e.g., "paper-09-15" for the class on Sept 15) for each EdStem post.
+- Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This gives the presenting students time to collect your questions for the class discussion.
+- Make sure to select the corresponding tag (e.g., **paper-09-15** for the class on Sept 15) for each EdStem post.
 - It is acceptable to miss THREE posts throughout the course. We will count the rest of the posts for your attendance score.
-- In each class, we will select two students at random to talk about the comments/questions in their post. If you are absent when called on, your attendance grade is reduced.
-- To avoid an attendance deduction for a class you cannot attend, email the TF about your absence **before** the class.
+- In each class, we will select two students at random to talk about the comments/questions in their posts. If you are absent when called on, your attendance grade is reduced.
+- To avoid an attendance deduction for a class you cannot attend, email the TF about your absence **before** the class with your reasons.
 
 ### The story (paper overview)
 - Give a talk about the whole paper, roughly 20 minutes, like a conference talk.
