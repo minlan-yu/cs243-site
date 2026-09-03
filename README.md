@@ -174,7 +174,7 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 ### Report logistics 
 - The story group submits the slides before the class.
 - Each group (the lineage, the mechanism, the evidence, the verdict) submits **one page** for its report. References do not count toward the page limit. One report per group, not per student.
-- Submissions for slides/reports are due by the noon on the day before the presentation, via email to the TF.
+- Submissions for slides/reports are due **before class**, via an EdStem post with corresponding tag: e.g., story-09/15, verdict-09/15, etc.
 
 ## Projects
 The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Top projects will be invited to continue working over the winter break to submit peer-reviewed papers to [ICLR 2027 workshops](https://iclr.cc/) and [ICML 2027](https://icml.cc/).
