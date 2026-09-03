@@ -34,7 +34,7 @@ Please see the detailed requirements after the syllabus.
 
 ## Syllabus
 
-The papers we read emphasize distributed systems and networking in ML Systems. Ed posts start from the 9/15 class.
+The papers we read emphasize distributed systems and networking in ML Systems. Ed posts and in-class presentations start from the 9/15 class.
 
 ### Introduction
 
