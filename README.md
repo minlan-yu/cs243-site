@@ -150,36 +150,26 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 - To avoid an attendance deduction for a class you cannot attend, email the TF about your absence **before** the class with your reasons.
 
 ### The story (paper overview)
-- Give a talk about the whole paper, roughly 20 minutes, like a conference talk.
-- Cover the motivation (what problem the paper is solving; why this problem wasn't solved before) and the challenges (why this problem is difficult to solve), and tie the parts of the paper together into a single story. Aim for what Keshav sets as the goal of the second pass: being able to summarize the main thrust of the paper, with supporting evidence, to someone who has not read it.
-- Two pieces of advice from Peyton Jones, Hughes, and Launchbury, [How to Give a Good Research Talk](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/giving-a-talk.pdf) (ACM SIGPLAN Notices 28(11), 1993): decide what you want the class to remember if they remember only one thing, and say it explicitly; and open with a concrete example instead of an outline, because "if you bore your audience in the first few minutes you may never get them back."
-- You should prepare slides for the talk and submit your slides to the TF by noon on the day before your presentation.
+- Give a talk about the whole paper, roughly 15-20 minutes, like a conference talk.
 - Some authors share slides online, and some conferences share conference talk videos. You are encouraged to check out these resources or reuse them for your presentation with clear citations. However, be aware that conference talks are often short and focus more on the motivation rather than the technical details. They may also highlight only the benefits of their approaches (Everyone likes their own work). So, if you reuse the slides, please add more technical details, ensure you understand the content thoroughly, and share your own understanding and opinions of the work (not just the authors').
 
-### The lineage (related work)
-- Give a presentation in class, roughly 10 minutes.
-- Explain what came before this paper, and how this paper differs from it.
-- Build that picture the way Keshav describes doing a literature survey: start from the paper's own related-work section, then look for shared citations and repeated author names across those papers, which point to the key papers and researchers in the area. Check where those researchers have published recently, and scan the recent proceedings of those venues for work that postdates this paper.
-- Where the paper claims to improve on prior work, say whether the comparison is a fair one, and flag any citations you think are missing.
+The remaining four roles are expected to lead the discussions (10-15 minutes each). You are not required to prepare slides, but if you have figures/slides to show on the screen, you are welcome to submit these materials together with your report on Ed before class too. 
+
+### The lineage (backgrounds and related work)
+- The report studies the broader scope of the topic; the important papers in this topic; and how the paper differs from them
+- You can start with the related work in the readings, but there are other follow-up works and blog posts and industry white papers that may talk about the broader background. The optional readings may give some clues on this too. 
 
 ### The mechanism (system design)
-- Give a presentation in class, roughly 10 minutes.
-- Explain how the authors address the challenges.
-- Take Keshav's third pass: attempt to virtually re-implement the design, making the same assumptions the authors made. Identify and challenge every assumption, and say where you would have made a different choice, and why.
-- By the end you should be able to reconstruct the structure of the design from memory, and to pinpoint the assumptions it leaves implicit.
+- The report studies how the authors address the challenges and compares the proposed solution in the paper with alternative solutions.
+- You can attempt to virtually re-implement the design, making the same assumptions the authors made. Identify and challenge every assumption, and say where you would have made a different choice, and why your choice may be better or worse.
 
 ### The evidence (evaluation)
-- Give a presentation in class, roughly 10 minutes.
-- Explain whether the evaluation demonstrates that the problems and challenges are solved.
-- Look carefully at the figures, and pay special attention to the graphs: are the axes properly labeled? Are results shown with error bars, so that the conclusions are statistically significant? As Keshav puts it, mistakes like these separate rushed, shoddy work from the truly excellent.
-- Say whether the paper gives enough information to reproduce the experiments, and call out any problems you see with the experimental or analytical technique.
+- The report studies whether the evaluation demonstrates that the problems and challenges are solved.
+- Look carefully at the figures, and pay special attention to the graphs. Do you agree with the system settings for the evaluation? Would you have the same conclusion from the graphs as the authors? What additional experiments or graphs would you like to generate for the paper that better demonstrate the pros/cons of the system design?
 
 ### The verdict (critique and future work)
-- Give a presentation in class, roughly 10 minutes.
-- Give a conference-style paper review: strengths and weaknesses, and your own opinions of the paper.
-- Use the third pass to pinpoint the paper's strong and weak points and its hidden failings, and, as Keshav suggests, to jot down ideas for future work: what would you do next if this were your project?
-- Summarize any other interesting points from the posts on Ed.
-- Read the posts submitted by your classmates, list their questions in your slides, and help lead the discussion of these questions in class.
+- This report studies today's and future views of this paper. Do you think the paper still has value in the next five years? Why and why not? Do the assumptions/settings of the paper change today or in the future? What do you predict as the trend? Any new opportunities in the future that would make the system design in the paper easier or harder?
+- You are also responsible for reading all the posts and extracting interesting ones to bring to the class discussion.
 
 ### Report logistics (the lineage, the mechanism, the evidence, the verdict)
 
