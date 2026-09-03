@@ -235,6 +235,9 @@ The report should be similar in spirit to a conference paper, spanning six pages
 - Limitations and Future Work: Briefly discuss what your system does not handle, known limitations, and directions for future improvement.
 - Conclusion: Summarize your work and its contributions.
 
+### Project submission
+All course-project-related submissions (proposal, mid-term report, final report) will be made via Canvas. Only one student per group needs to submit. The names of all group members should appear on the first page.
+
 ### Code submission
 Together with the final report, you should submit the GitHub link of your project code. The code does not need polished software engineering, but it should come with enough documentation that a motivated user could attempt to replicate your results. You will need to demo your system to the TF at office hours after the final project deadline.
 
