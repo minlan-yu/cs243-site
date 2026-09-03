@@ -139,8 +139,6 @@ Every student posts questions and comments about the required readings (not the 
 
 Each paper has five such roles: **the story**, **the lineage**, **the mechanism**, **the evidence**, and **the verdict**. Each role is taken by two or three students, who prepare and present it together. Over the semester, every student signs up for five papers, taking a different role each time. The presentation times given below are approximate: we may be flexible about how the time is allocated across the five roles from paper to paper, depending on which parts of a particular paper are worth the most discussion.
 
-A useful method for every role below is the three-pass approach in S. Keshav, [How to Read a Paper](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458) (ACM SIGCOMM CCR 37(3), 2007): a five-to-ten minute first pass for a bird's-eye view, a second pass of up to an hour to grasp the content but not the details, and a third pass that attempts to virtually re-implement the paper. The Ed post asks for a first or second pass; the in-depth roles ask for a third pass on one part of the paper.
-
 ### Questions and comments about the paper before the class by all the students
 
 - Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings.
