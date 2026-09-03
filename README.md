@@ -1,4 +1,4 @@
-# CS 243, Fall 2026: Advanced Computer Networks
+# CS 2430, Fall 2026: Advanced Computer Networks
 
 ## Overview
 
