@@ -22,7 +22,7 @@ The course focuses on the intersection of machine learning and networking. As ML
 There are no required textbooks for the course. You will read papers before each class to get the most out of the class. For background, you are encouraged to refer to the following references:
 - For basic networking concepts, you can refer to the textbook (K&R) Computer Networking: A Top-Down Approach by Jim Kurose and Keith Ross. The latest edition is the 8th, but earlier editions are fine.
 - An alternative book is Computer Networks: A Systems Approach, by Larry Peterson and Bruce Davie. You can find an online version [here](https://book.systemsapproach.org/).
-- For large-scale training and the parallelism schemes we cover, [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) from Hugging Face is a helpful reference. Individual chapters are linked as optional reading throughout the syllabus.
+- For large-scale training and the parallelism schemes we cover, [The Ultra-Scale Playbook: Training LLMs on GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook) from Hugging Face is a helpful reference. 
 - Please feel free to contact me if some concepts are difficult to understand; I'll provide more supplemental materials.
 
 ## Coursework and Grading
