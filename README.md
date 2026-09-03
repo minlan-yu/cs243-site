@@ -139,7 +139,7 @@ Every student posts questions and comments about the required readings (not the 
 
 Each paper has five such roles: **the story**, **the lineage**, **the mechanism**, **the evidence**, and **the verdict**. Each role is taken by two or three students, who prepare and present it together. Over the semester, every student signs up for five papers, taking a different role each time. The presentation times given below are approximate: we may be flexible about how the time is allocated across the five roles from paper to paper, depending on which parts of a particular paper are worth the most discussion.
 
-### Questions and comments about the paper before the class by all the students
+### Questions/comments by all the students
 
 - Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings.
 - Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph, referring to the specific context from the paper first and then describing your comments or questions in depth. For example, rather than just asking how this system scales to 10K GPUs, you should talk about the specific perspectives of the system (e.g., the paper has an evaluation of communication overhead as the GPU number grows) and share your thoughts (so when we have more GPUs, the balance of compute and communication may change).
