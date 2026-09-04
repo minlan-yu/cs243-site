@@ -19,8 +19,8 @@ Your AWS account has default quotas, but you can request a quota increase, such 
 Here are some recommended quota increase requests from TFs if you don't know what you need for your project yet:
 - Running On-Demand G and VT instances: Default limit 0 ==> 4 (needed for the warmup project)
 - All Standard (A, C, D, H, I, M, R, T, Z) Spot Instance Requests: Default limit 5 ==> 100
-- All G and VT Spot Instance Requests: Default limit 0 ==> 20
-- All P Spot Instance Requests: Default limit 0 ==> 20
+- All G and VT Spot Instance Requests: Default limit 0 ==> 8
+- All P Spot Instance Requests: Default limit 0 ==> 8
 
 **Important:** Request your quota increases as early as possible. Simple increases (e.g., 0 to 4 vCPUs) are often approved within a few hours, but new accounts may take longer.
 
