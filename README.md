@@ -10,7 +10,7 @@ The course focuses on the intersection of machine learning and networking. As ML
 - Lecture time: TuTh 11:15 am to 12:30 pm
 - Location: SEC 1.402
 - Office hours: Tu 10-11 am, SEC 4.415
-- Teaching fellow: Weifan Jiang (weifanjiang@g.harvard.edu). Office hours Tu 1-2pm, SEC 4.425, and by email appointments.
+- Teaching fellow: Weifan Jiang (weifanjiang@g.harvard.edu). Office hours Th 1-2pm, SEC 4.425, and by email appointments.
 - Prerequisite: This course has no prerequisites. Since this course will focus on reading papers on the latest topics in networking, you will need to be able to pick up the relevant background for each topic from textbooks or online materials.
 - Recommended prep: system programming at the level of CS 61, CS 143, or CS 145.
 
