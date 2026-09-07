@@ -100,7 +100,7 @@ The papers we read emphasize distributed systems and networking in ML systems. E
   * Optional reading: [ThunderKittens: Simple, Fast, and Adorable AI Kernels](https://arxiv.org/abs/2410.20399)
 
 
-### RL, Agentic AI, and Power
+### Agentic AI, RL, Reliability, and Power
 
 - 11/3 Tu: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
@@ -115,9 +115,9 @@ The papers we read emphasize distributed systems and networking in ML systems. E
   * Reading: [Verl (HybridFlow: A Flexible and Efficient RLHF Framework)](https://arxiv.org/abs/2409.19256)
   * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
-- 11/17 Tu: Reinforcement learning systems
-  * Reading: [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](https://arxiv.org/abs/2604.09107)
-  * Reading: [Accelerating RLHF with vLLM, Best Practice from OpenRLHF](https://blog.vllm.ai/2025/04/23/openrlhf-vllm.html)
+- 11/17 Tu: Reliability and fault tolerance
+  * Reading: [TrainMover: An Interruption-Resilient Runtime for ML Training](https://arxiv.org/abs/2412.12636) (OSDI 2026)
+  * Optional reading: [Mycroft: Tracing Dependencies in Collective Communication Towards Reliable LLM Training](https://arxiv.org/abs/2509.03018) (SOSP 2025)
 - 11/19 Th: Power
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
   * Optional reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
