@@ -116,8 +116,8 @@ The papers we read emphasize distributed systems and networking in ML systems. E
   * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
 - 11/17 Tu: Reliability and fault tolerance
-  * Reading: [TrainMover: An Interruption-Resilient Runtime for ML Training](https://arxiv.org/abs/2412.12636) (OSDI 2026)
-  * Optional reading: [Mycroft: Tracing Dependencies in Collective Communication Towards Reliable LLM Training](https://arxiv.org/abs/2509.03018) (SOSP 2025)
+  * Reading: [TrainMover: An Interruption-Resilient Runtime for ML Training](https://arxiv.org/abs/2412.12636)
+  * Optional reading: [Mycroft: Tracing Dependencies in Collective Communication Towards Reliable LLM Training](https://arxiv.org/abs/2509.03018)
 - 11/19 Th: Power
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
   * Optional reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
