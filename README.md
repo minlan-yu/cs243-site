@@ -139,10 +139,10 @@ Every student posts questions and comments about the required readings (not the 
 
 Each paper has five such roles: **the story**, **the lineage**, **the mechanism**, **the evidence**, and **the verdict**. Each role is taken by two or three students, who prepare and present it together. Over the semester, every student signs up for five papers, taking a different role each time. The presentation times given below are approximate: we may be flexible about how the time is allocated across the five roles from paper to paper, depending on which parts of a particular paper are worth the most discussion.
 
-### Questions/comments by all the students
+### Questions/comments by non-presenting students
 
 - Everyone is required to read the papers labeled as readings before the class. You do not have to read the optional readings.
-- Everyone needs to post one comment or one question about the paper in Ed. The post should be just one paragraph: point to the specific context in the paper first, then describe your comment or question in depth. For example, rather than just asking how this system scales to 10K GPUs, refer to something concrete in the paper (e.g., its evaluation of communication overhead as the number of GPUs grows) and share your own thinking (with more GPUs, the balance between compute and communication may shift).
+- Everyone who is not presenting the paper needs to post one comment or one question about the paper in Ed. The post should be just one paragraph: point to the specific context in the paper first, then describe your comment or question in depth. For example, rather than just asking how this system scales to 10K GPUs, refer to something concrete in the paper (e.g., its evaluation of communication overhead as the number of GPUs grows) and share your own thinking (with more GPUs, the balance between compute and communication may shift).
 - Posts are due by noon one day before class (Monday noon for Tuesday classes; Wednesday noon for Thursday classes). This gives the presenting students time to collect your questions for the class discussion.
 - Make sure to select the corresponding tag (e.g., **comment-09-15** for the class on Sept 15) for each Ed post.
 - You may miss up to **three** posts over the semester; the rest count toward your attendance score.
@@ -176,6 +176,7 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 - The story group submits the slides before the class.
 - Each group (the lineage, the mechanism, the evidence, the verdict) submits **one page** for its report. References do not count toward the page limit. One report per group, not per student.
 - Submissions for slides/reports are due **before class**, via an EdStem post with corresponding tag: e.g., story-09/15, verdict-09/15, etc.
+- Presenters are not required to submit the pre-class questions.
 
 ## Projects
 The semester-long project is an open-ended systems research project. Project topics are of your choice but should be related to ML systems and/or networking. Projects should be done in groups of two or three and include a systems-building component. Note that we do not consider the number of students in a group in grading — scope expectations are the same regardless of group size. Top projects will be invited to continue working over the winter break to submit peer-reviewed papers to [ICLR 2027 workshops](https://iclr.cc/) and [ICML 2027](https://icml.cc/).
