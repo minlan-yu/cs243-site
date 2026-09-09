@@ -166,9 +166,10 @@ Each paper has five such roles: **the story**, **the lineage**, **the mechanism*
 ### The evidence (evaluation)
 - The report studies whether the evaluation demonstrates that the problems and challenges are solved.
 - Look carefully at the figures, and pay special attention to the graphs. Do you agree with the system settings for the evaluation? Would you have the same conclusion from the graphs as the authors? What additional experiments or graphs would you like to generate for the paper that better demonstrate the pros/cons of the system design?
+- This paper may give some hints on how to think about performance measurements: [Always Measure One Level Deeper](https://cacm.acm.org/research/always-measure-one-level-deeper/)
 
 ### The verdict (critique and future work)
-- This report studies today's and future views of this paper. Do you think the paper still has value in the next five years? Why or why not? Do the assumptions/settings of the paper change today or in the future? What do you predict as the trend? Any new opportunities in the future that would make the system design in the paper easier or harder?
+- This report studies today's and future views of this paper. Do you think the paper still has value in the next five years? Why or why not? Do the assumptions/settings of the paper change today or in the future? What do you predict the trend will be? Are there any new opportunities in the future that would make the system design in the paper easier or harder?
 - You are also responsible for reading all the posts and extracting interesting ones to bring to the class discussion.
 
 ### Report logistics 
