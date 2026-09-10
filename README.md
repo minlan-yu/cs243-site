@@ -102,33 +102,33 @@ The papers we read emphasize distributed systems and networking in ML systems. E
 
 ### Agentic AI, RL, Reliability, and Power
 
-- 11/3 Tu: Agentic AI
+- 11/3 Tu: Class canceled
+- 11/5 Th: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
   * Optional reading: [Pie: A Programmable Serving System for Emerging LLM Applications](https://arxiv.org/abs/2510.24051)
-- 11/5 Th: Prompt and program optimization
+- 11/10 Tu: Prompt and program optimization
   * Reading: [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457)
   * Optional reading: [optimize_anything: A Universal API for Optimizing any Text Parameter](https://arxiv.org/abs/2605.19633)
-- 11/10 Tu: Computer use
+- 11/12 Th: Computer use
   * Reading: [OSGym: Scalable OS Infra for Computer Use Agents](https://arxiv.org/abs/2511.11672)
   * Optional reading: [OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents](https://arxiv.org/abs/2506.16042)
-- 11/12 Th: Post-training; Reinforcement learning
+- 11/17 Tu: Post-training; Reinforcement learning
   * Reading: [Verl (HybridFlow: A Flexible and Efficient RLHF Framework)](https://arxiv.org/abs/2409.19256)
   * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
-- 11/17 Tu: Reliability and fault tolerance
+- 11/19 Th: Reliability and fault tolerance
   * Reading: [TrainMover: An Interruption-Resilient Runtime for ML Training](https://arxiv.org/abs/2412.12636)
   * Optional reading: [Mycroft: Tracing Dependencies in Collective Communication Towards Reliable LLM Training](https://arxiv.org/abs/2509.03018)
-- 11/19 Th: Power
+- 11/24 Tu: Power
   * Reading: [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
   * Optional reading: [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461)
 
 
 ### Final project presentation
 
-- 11/24 Tu: Final project presentation (batch I)
 - 11/26 Th: No class: Thanksgiving
-- 12/1 Tu: Final project presentation (batch II)
-- 12/3 Th: Final project presentation (batch III)
+- 12/1 Tu: Final project presentation (batch I)
+- 12/3 Th: Final project presentation (batch II)
 - 12/16 Final project due at noon (date set by the school's examination schedule)
 
 ## Paper reading and in-class presentations
@@ -187,7 +187,7 @@ The semester-long project is an open-ended systems research project. Project top
 - 9/29 Tu, 10/1 Th: Course project pitch presentation
 - 11/8 Sun at noon: Midterm project report due
 - 11/9-13: Schedule individual meetings with Minlan to get feedback on your midterm report
-- 11/24 Tu, 12/1 Tu, 12/3 Th: Final project presentation
+- 12/1 Tu, 12/3 Th: Final project presentation
 - 12/16 Final project due at noon
 
 ### Project Proposal
