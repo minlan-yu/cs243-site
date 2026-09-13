@@ -102,7 +102,7 @@ The papers we read emphasize distributed systems and networking in ML systems. E
 
 ### Agentic AI, RL, Reliability, and Power
 
-- 11/3 Tu: Class canceled
+- 11/3 Tu: Class canceled (Time to work on your course projects)
 - 11/5 Th: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
   * Optional reading: [Pie: A Programmable Serving System for Emerging LLM Applications](https://arxiv.org/abs/2510.24051)
@@ -127,8 +127,8 @@ The papers we read emphasize distributed systems and networking in ML systems. E
 ### Final project presentation
 
 - 11/26 Th: No class: Thanksgiving
-- 12/1 Tu: Final project presentation (batch I)
-- 12/3 Th: Final project presentation (batch II)
+- 12/1 Tu: Final project presentation (batch I) Expect longer class times
+- 12/3 Th: Final project presentation (batch II) Expect longer class times
 - 12/16 Final project due at noon (date set by the school's examination schedule)
 
 ## Paper reading and in-class presentations
