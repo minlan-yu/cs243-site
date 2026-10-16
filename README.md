@@ -127,8 +127,8 @@ The papers we read emphasize distributed systems and networking in ML systems. E
 ### Final project presentation
 
 - 11/26 Th: No class: Thanksgiving
-- 12/1 Tu: Final project presentation (batch I) Expect longer class times
-- 12/3 Th: Final project presentation (batch II) Expect longer class times
+- 12/1 Tu: Final project presentation (batch I). Class time extended to 11:15am-2pm.
+- 12/3 Th: Final project presentation (batch II). Class time extended to 11:15am-2pm.
 - 12/16 Final project due at noon (date set by the school's examination schedule)
 
 ## Paper reading and in-class presentations
@@ -215,7 +215,7 @@ The midterm report should be about 2-4 pages using the [ICML template](https://m
 - Discuss the remaining challenges, how you plan to address them, and your plan for the remaining time.
 
 ### Final project presentations
-This presentation should resemble a workshop talk of around 10 minutes. You might consider covering the following content (not necessarily in the same order):
+This presentation should resemble a workshop talk. You might consider covering the following content (not necessarily in the same order):
 - What problem are you solving?
 - Why is it an important problem?
 - What is your basic solution to the problem?
@@ -224,6 +224,7 @@ This presentation should resemble a workshop talk of around 10 minutes. You migh
 - Your preliminary evaluation results
 - What do you plan to improve for the final report?
 
+Each group has 15 minutes (10 for the talk and 5 for QA).
 
 ### Final Project Report
 The report should be similar in spirit to a conference paper, spanning six pages in double-column, single-spaced, 10-point format, excluding references. Here is an [example LaTeX framework](https://media.icml.cc/Conferences/ICML2025/Styles/icml2025.zip) for formatting and building your paper. As shown in the framework, you may consider the following sections for your report (adapted from Eddie's version):
