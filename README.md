@@ -215,7 +215,7 @@ The midterm report should be about 2-4 pages using the [ICML template](https://m
 - Discuss the remaining challenges, how you plan to address them, and your plan for the remaining time.
 
 ### Final project presentations
-This presentation should resemble a workshop talk. You might consider covering the following content (not necessarily in the same order):
+This presentation should resemble a workshop talk of around 10 minutes. You might consider covering the following content (not necessarily in the same order):
 - What problem are you solving?
 - Why is it an important problem?
 - What is your basic solution to the problem?
