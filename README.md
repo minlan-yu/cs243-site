@@ -95,14 +95,12 @@ The papers we read emphasize distributed systems and networking in ML systems. E
   * Reading: [MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs](https://arxiv.org/abs/2512.22219)
   * Optional reading: [ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels](https://arxiv.org/abs/2511.13940)
   * Optional reading: [ThunderKittens: Simple, Fast, and Adorable AI Kernels](https://arxiv.org/abs/2410.20399)
-
-
-### Agentic AI, RL, Reliability, and Power
-
 - 11/3 Tu: AI networking (Guest speaker: Mario Baldi, Nvidia)
   * Reading: [Resilient AI Supercomputer Networking using MRC and SRv6](https://arxiv.org/pdf/2605.04333) (OpenAI)
   * Optional reading: [ESUN: Ethernet for Scale-Up Networking (OCP, 2025)](https://www.opencompute.org/blog/introducing-esun-advancing-ethernet-for-scale-up-ai-infrastructure-at-ocp)
   * Optional reading: [UALink: An Open, High-Efficiency Scale-Up Interconnect for AI (UALink Consortium white paper)](https://ualinkconsortium.org/wp-content/uploads/2026/01/UALink_White_Paper_Publication_Candidate_FINAL_VERSION.pdf)
+
+### Agentic AI, RL, Reliability, and Power
 - 11/5 Th: Agentic AI
   * Reading: [Autellix: An Efficient Serving Engine for LLM Agents as General Programs](https://arxiv.org/abs/2502.13965)
   * Optional reading: [Pie: A Programmable Serving System for Emerging LLM Applications](https://arxiv.org/abs/2510.24051)
