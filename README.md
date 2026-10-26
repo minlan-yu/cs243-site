@@ -125,8 +125,8 @@ The papers we read emphasize distributed systems and networking in ML systems. E
 ### Final project presentation
 
 - 11/26 Th: No class: Thanksgiving
-- 12/1 Tu: Final project presentation (batch I). Class time extended to 11:15am-2pm.
-- 12/3 Th: Final project presentation (batch II). Class time extended to 11:15am-2pm.
+- 12/1 Tu: Final project presentation (batch I). Class time extended to 11:15am-2pm. **Location: SEC 1.402.**
+- 12/3 Th: Final project presentation (batch II). Class time extended to 11:15am-2pm. **Location: SEC 3.301/3.302/3.303.**
 - 12/16 Final project due at noon (date set by the school's examination schedule)
 
 ## Paper reading and in-class presentations
