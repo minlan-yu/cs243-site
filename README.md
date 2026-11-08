@@ -112,7 +112,7 @@ The papers we read emphasize distributed systems and networking in ML systems. E
   * Optional reading: [OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents](https://arxiv.org/abs/2506.16042)
 - 11/17 Tu: Post-training; Reinforcement learning
   * Reading: [Verl (HybridFlow: A Flexible and Efficient RLHF Framework)](https://arxiv.org/abs/2409.19256)
-  * Reading: [SkyRL: A Modular Full-stack RL Library for LLMs](https://github.com/NovaSky-AI/SkyRL)
+  * Reading: [SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent](https://arxiv.org/pdf/2511.16108)
   * Optional reading: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
 - 11/19 Th: Reliability and fault tolerance
   * Reading: [TrainMover: An Interruption-Resilient Runtime for ML Training](https://arxiv.org/abs/2412.12636)
